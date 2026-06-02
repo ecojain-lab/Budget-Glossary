@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#3b82f6" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
+  <meta name="description" content="공공·정부 예산 중심의 모바일 친화 예산용어사전. 한자·영문 표기, 6대분류 135개 용어, 실시간 검색·다크모드 지원." />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="예산용어사전" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="application-name" content="예산용어사전" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>예산용어사전 — 公共財政 豫算用語</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/icon.svg" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png" />
+  <link rel="apple-touch-icon" sizes="512x512" href="assets/icons/icon-512.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('dicmoney:theme');
+        if (t !== 'light') document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
+  <header class="app-header" role="banner">
+    <div class="app-header__row">
+      <div class="app-header__title">
+        <button id="homeBtn" class="home-btn" type="button" aria-label="예산용어사전 처음 페이지로 이동">
+          <h1>
+            <span class="logo" aria-hidden="true">📖</span>
+            <span class="title-text">
+              <span class="title-ko">예산용어사전</span>
+              <span class="title-meta">
+                <span class="title-hanja">豫算用語辭典</span>
+                <span class="title-en">Budget Glossary</span>
+              </span>
+            </span>
+          </h1>
+        </button>
+        <p class="app-header__subtitle">공공·정부 예산 중심 · 모바일 친화 · 한자·영문 표기</p>
+      </div>
+      <div class="app-header__actions">
+        <span class="app-version" title="현재 빌드 버전">v0.9.1</span>
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="다크 모드 토글" title="다크 모드 토글">
+          <svg class="ic ic-sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4V2m0 20v-2m8-8h2M2 12h2m13.66-5.66l1.41-1.41M4.93 19.07l1.41-1.41m0-11.32L4.93 4.93m14.14 14.14l-1.41-1.41M12 7a5 5 0 100 10 5 5 0 000-10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+          <svg class="ic ic-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="search-wrap">
+      <label for="searchInput" class="visually-hidden">용어 검색</label>
+      <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="searchInput" type="search" inputmode="search" autocomplete="off" placeholder="용어·한자·영문으로 검색" />
+      <button id="clearSearch" class="search-clear" type="button" aria-label="검색어 지우기" hidden>✕</button>
+    </div>
+
+    <nav class="alpha-bar" aria-label="가나다 인덱스">
+      <button class="alpha-chip" data-initial="ALL" type="button">전체</button>
+      <button class="alpha-chip" data-initial="ㄱ" type="button">ㄱ</button>
+      <button class="alpha-chip" data-initial="ㄴ" type="button">ㄴ</button>
+      <button class="alpha-chip" data-initial="ㄷ" type="button">ㄷ</button>
+      <button class="alpha-chip" data-initial="ㄹ" type="button">ㄹ</button>
+      <button class="alpha-chip" data-initial="ㅁ" type="button">ㅁ</button>
+      <button class="alpha-chip" data-initial="ㅂ" type="button">ㅂ</button>
+      <button class="alpha-chip" data-initial="ㅅ" type="button">ㅅ</button>
+      <button class="alpha-chip" data-initial="ㅇ" type="button">ㅇ</button>
+      <button class="alpha-chip" data-initial="ㅈ" type="button">ㅈ</button>
+      <button class="alpha-chip" data-initial="ㅊ" type="button">ㅊ</button>
+      <button class="alpha-chip" data-initial="ㅋ" type="button">ㅋ</button>
+      <button class="alpha-chip" data-initial="ㅌ" type="button">ㅌ</button>
+      <button class="alpha-chip" data-initial="ㅍ" type="button">ㅍ</button>
+      <button class="alpha-chip" data-initial="ㅎ" type="button">ㅎ</button>
+      <button class="alpha-chip" data-initial="EN" type="button">EN</button>
+    </nav>
+
+    <div class="result-count" id="resultCount" aria-live="polite"></div>
+
+    <div id="emptyState" class="empty-state empty-state--inline" hidden role="status" aria-live="polite">
+      <h2>일치하는 용어가 없어요</h2>
+      <p>검색어·철자·영문 표기를 다시 확인해 보세요.</p>
+    </div>
+  </header>
+
+  <main id="main" class="app-main">
+    <section id="categories" class="categories" aria-label="대분류">
+      <!-- 6대분류 아코디언이 JS로 렌더링됩니다 -->
+    </section>
+
+    <section id="termList" class="term-list" aria-label="용어 목록" hidden>
+      <div class="term-list__header">
+        <h2 id="termListTitle">검색 결과</h2>
+        <button id="closeListBtn" class="text-btn" type="button">✕ 닫기</button>
+      </div>
+      <div id="termListBody" class="term-list__body"></div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-close="true"></div>
+    <article class="modal__panel" tabindex="-1">
+      <button class="modal__close" type="button" aria-label="닫기" data-close="true">✕</button>
+      <header class="modal__head">
+        <div class="modal__cat-tag" id="modalCatTag"></div>
+        <h2 id="modalTitle" class="modal__title"></h2>
+        <div class="modal__alt" id="modalAlt"></div>
+      </header>
+      <section class="modal__section">
+        <h3 class="modal__h3">📌 한 줄 요약</h3>
+        <p id="modalSummary" class="modal__summary"></p>
+      </section>
+      <section class="modal__section">
+        <h3 class="modal__h3">📖 상세 설명</h3>
+        <p id="modalDetail" class="modal__detail"></p>
+      </section>
+      <section class="modal__section" id="modalExamplesWrap">
+        <h3 class="modal__h3">📂 예시</h3>
+        <ul id="modalExamples" class="modal__list"></ul>
+      </section>
+      <section class="modal__section" id="modalRelatedWrap">
+        <h3 class="modal__h3">🔗 관련 용어</h3>
+        <div id="modalRelated" class="modal__chips"></div>
+      </section>
+      <section class="modal__section" id="modalSourcesWrap">
+        <h3 class="modal__h3">📚 출처</h3>
+        <p id="modalSources" class="modal__sources"></p>
+      </section>
+    </article>
+  </div>
+
+  <footer class="app-footer">
+    <p>
+      <strong>예산용어사전</strong> · 공공·정부 예산 중심 · v0.9.1 ·
+      <a href="https://openfiscaldata.go.kr" target="_blank" rel="noopener">열린재정</a> ·
+      <a href="https://www.law.go.kr" target="_blank" rel="noopener">국가법령정보센터</a>
+    </p>
+    <div class="app-footer__sources">
+      <p class="app-footer__sources-title">📚 참고 출처</p>
+      <p class="app-footer__sources-list">국가재정법 · 열린재정 재정정보공개시스템 · 서울시재정포털 · e-나라지표 · OECD Climate Budgeting</p>
+      <p class="app-footer__sources-extra">기획재정부 · NABO(국회예산정책처) · KLRI(한국법제연구원) · 행정안전부 · 여성가족부 · 환경부</p>
+    </div>
+    <p class="app-footer__small">이 사전은 공공정보를 바탕으로 한 참고자료이며, 법적 효력이 없습니다.</p>
+    <p class="app-footer__credit">Design by jhKim Lab</p>
+  </footer>
+
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/theme.js" defer></script>
+  <script src="assets/js/search.js" defer></script>
+  <script src="assets/js/filter.js" defer></script>
+  <script src="assets/js/modal.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+  <script>
+    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./sw.js').catch(function (err) {
+          console.warn('SW registration failed:', err);
+        });
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "name": "예산용어사전 — Budget Glossary",
+  "short_name": "예산용어사전",
+  "description": "공공·정부 예산 중심의 모바일 친화 예산용어사전. 한자·영문 표기, 6대분류 135개 용어, 실시간 검색·다크모드 지원.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "id": "/dicmoney",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#eef1f7",
+  "theme_color": "#3b82f6",
+  "lang": "ko",
+  "dir": "ltr",
+  "categories": ["education", "productivity", "books"],
+  "icons": [
+    {
+      "src": "assets/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

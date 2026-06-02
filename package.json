@@ -1,0 +1,19 @@
+{
+  "name": "dicmoney",
+  "version": "0.9.1",
+  "private": true,
+  "description": "공공·정부 예산 중심의 모바일 친화 예산용어사전 (Vanilla HTML/CSS/JS, 빌드 도구 없음)",
+  "scripts": {
+    "start": "node -e \"const http=require('http'),fs=require('fs'),path=require('path');const types={'.html':'text/html','.css':'text/css','.js':'application/javascript','.json':'application/json','.svg':'image/svg+xml','.md':'text/markdown'};const s=http.createServer((req,res)=>{let u=req.url.split('?')[0];if(u==='/')u='/index.html';const p=path.join(process.cwd(),decodeURIComponent(u));if(!p.startsWith(process.cwd())||!fs.existsSync(p)){res.writeHead(404);return res.end('Not Found');}const ext=path.extname(p);res.writeHead(200,{'Content-Type':types[ext]||'application/octet-stream'});fs.createReadStream(p).pipe(res);});const port=process.env.PORT||4173;s.listen(port,()=>console.log('http://localhost:'+port));\""
+  },
+  "keywords": [
+    "budget",
+    "glossary",
+    "korean",
+    "public-finance",
+    "예산",
+    "용어사전"
+  ],
+  "author": "dicmoney contributors",
+  "license": "MIT"
+}
