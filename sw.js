@@ -4,7 +4,7 @@
 const CACHE_NAME = 'dicmoney-v0.9.6';
 const ASSETS = [
   './',
-  './budget-glossary.html',
+  './index.html',
   './manifest.json',
   './assets/css/style.css',
   './assets/js/data.js',

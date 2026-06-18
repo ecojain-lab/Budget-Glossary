@@ -15,7 +15,7 @@ const types = {
 
 const server = http.createServer((req, res) => {
   let url = req.url.split('?')[0];
-  if (url === '/') url = '/budget-glossary.html';
+  if (url === '/') url = '/index.html';
   const filePath = path.join(process.cwd(), decodeURIComponent(url));
   const ext = path.extname(filePath);
   const contentType = types[ext] || 'application/octet-stream';
