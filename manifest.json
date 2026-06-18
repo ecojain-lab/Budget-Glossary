@@ -2,7 +2,7 @@
   "name": "예산용어사전 — Budget Glossary",
   "short_name": "예산용어사전",
   "description": "공공·정부 예산 중심의 모바일 친화 예산용어사전. 한자·영문 표기, 6대분류 135개 용어, 실시간 검색·다크모드 지원.",
-  "start_url": "./index.html",
+  "start_url": "./budget-glossary.html",
   "scope": "./",
   "id": "/dicmoney",
   "display": "standalone",

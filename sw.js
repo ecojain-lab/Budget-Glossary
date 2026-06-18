@@ -1,10 +1,10 @@
-/* Service Worker — dicmoney v0.9.1
+/* Service Worker — dicmoney v0.9.6
    전략: stale-while-revalidate (캐시 우선 응답 + 백그라운드 갱신) */
 
-const CACHE_NAME = 'dicmoney-v0.9.1';
+const CACHE_NAME = 'dicmoney-v0.9.6';
 const ASSETS = [
   './',
-  './index.html',
+  './budget-glossary.html',
   './manifest.json',
   './assets/css/style.css',
   './assets/js/data.js',

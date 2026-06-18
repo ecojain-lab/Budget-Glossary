@@ -8,6 +8,15 @@
 
   async function load() {
     try {
+      if (window.DICT_DATA) {
+        window.DICT = {
+          meta: window.DICT_DATA.meta || {},
+          terms: Array.isArray(window.DICT_DATA.terms) ? window.DICT_DATA.terms : [],
+          loaded: true,
+        };
+        setTimeout(() => document.dispatchEvent(new CustomEvent('dict:loaded')), 0);
+        return;
+      }
       const res = await fetch(DICT_URL, { cache: 'no-cache' });
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const json = await res.json();

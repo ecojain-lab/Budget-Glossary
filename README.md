@@ -4,11 +4,26 @@
 > 한자(漢字) · 영문(English) 표기 포함, 빌드 도구 없음, 데이터는 JSON 한 파일.
 
 [![MIT](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
-[![version](https://img.shields.io/badge/version-v0.9.1-blue.svg)]()
-[![terms](https://img.shields.io/badge/terms-135-blue.svg)](./data/terms.json)
+[![version](https://img.shields.io/badge/version-v0.9.6-blue.svg)]()
+[![terms](https://img.shields.io/badge/terms-249-blue.svg)](./data/terms.json)
 [![no build](https://img.shields.io/badge/build-none-lightgrey.svg)]()
 
 ---
+
+## 📌 v0.9.6 변경 요약
+
+| 항목 | 변경 |
+|------|------|
+| 용어 수 | 135 → **249** (118개 용어에 examples/related/sources 추가, 4개 중복 통합) |
+| 중복 통합 ① | `주민참여예산`(cat1) → **`주민참여예산제도`(cat6)** 로 통합 |
+| 중복 통합 ② | `투·융자사업 심사` → **`투융자사업 심사`** 로 통합 |
+| 중복 통합 ③ | `민간이전경비` + `민간이전` → **`민간이전(경비)`** 로 통합 |
+| 중복 통합 ④ | `기후변화대응 예산`(cat6) → **`기후예산`(cat1)** 으로 통합 |
+| 조정교부금 | detail에 **일반조정교부금·특별조정교부금** 구분 설명 추가 |
+| 메인 페이지 | `index.html` → **`budget-glossary.html`** 로 파일명 변경, 모든 참조 업데이트 |
+| 아이콘 | 파란 사각박스 안 글씨 **`예` → `예`/`산` 세로 배치** |
+| 참고 출처 | footer에 **지방자치단체 예산편성 운영기준 및 기금운용계획 수립기준 · 서울특별시 참여예산 · 인천광역시 주민참여예산** 3개 추가 |
+| 버전 | v0.9.1 → **v0.9.6** (전역 업데이트) |
 
 ## 📌 v0.9.1 변경 요약
 
@@ -33,11 +48,12 @@
 - **모바일 우선** — 360px ~ 480px 화면에 최적화, 태블릿·데스크톱도 대응
 - **다크 모드** — 시스템 설정 자동 감지, 수동 토글 가능, `localStorage`에 저장
 - **6대분류 20중분류** — `예산 절차 · 재정 수입과 지출 · 회계·기금·회계처리 · 재정 규모와 건전성 · 결산·성과·평가 · 정책·시민 참여 예산`
-- **135개 시드 용어** — 국가재정법, 열린재정, 서울시재정포털, 기획재정부, NABO, KLRI 등 공공 출처 기반
+- **249개 용어 전 항목** examples(예시) · related(관련 용어) · sources(출처) 포함
+- **249개 용어** — 국가재정법, 열린재정, 서울시재정포털, 기획재정부, NABO, KLRI 등 공공 출처 기반, 전 항목 examples/related/sources 포함
 - **한자 + 영문 동시 표기** — 카드 우상단과 모달 상단에 작게
 - **실시간 검색** — 한글·한자·영문·요약·상세·출처 전부 대상, 150ms 디바운스
 - **가나다 초성 인덱스** — ㄱ~ㅎ + EN, 모바일 폭에 따라 자동 줄바꿈. 칩 탭 시 선택된 중분류 자동 해제
-- **모달 + 해시 라우팅** — `index.html#term/seip` 으로 특정 용어 직접 공유
+- **모달 + 해시 라우팅** — `budget-glossary.html#term/seip` 으로 특정 용어 직접 공유
 - **PWA (홈 화면 설치)** — `manifest.json` + Service Worker 로 안드로이드·아이폰에 네이티브 앱처럼 설치 가능, 오프라인에서도 동작
 - **의존성 0** — 외부 라이브러리, CDN, 폰트 임포트 없음 (시스템 폰트 스택)
 
@@ -47,13 +63,14 @@
 
 ```
 dicmoney/
-├── index.html              # 메인 페이지
+├── budget-glossary.html    # 메인 페이지
 ├── manifest.json           # PWA 매니페스트 (홈 화면 설치)
 ├── sw.js                   # Service Worker (오프라인 캐시)
 ├── README.md               # 사용·배포·용어 추가 가이드
 ├── package.json            # 로컬 서버 실행 스크립트 (선택)
 ├── data/
-│   └── terms.json          # 135개 용어 시드 데이터
+│   ├── terms.json          # 249개 용어 메인 데이터
+│   └── terms.js            # 인라인 백업 (window.DICT_DATA)
 └── assets/
     ├── css/
     │   └── style.css       # 반응형 + 다크모드 + 한자/영문 스타일
@@ -75,8 +92,8 @@ dicmoney/
 ## 🚀 사용법
 
 ### 모바일·PC에서 바로 열기
-1. `index.html` 을 더블클릭하거나
-2. 스마트폰 브라우저로 `index.html` 파일 위치를 열면 끝.
+1. `budget-glossary.html` 을 더블클릭하거나
+2. 스마트폰 브라우저로 `budget-glossary.html` 파일 위치를 열면 끝.
 
 ### 로컬 서버로 실행 (권장 — `fetch()` 가 file:// 에서 일부 차단될 수 있음)
 ```bash
