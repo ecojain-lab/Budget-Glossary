@@ -18,10 +18,16 @@
     }
     render(t);
     const m = modal();
+    const panel = m.querySelector('.modal__panel');
+    if (panel) {
+      panel.style.transition = '';
+      panel.style.transform = '';
+      panel.style.opacity = '';
+      panel.classList.remove('dragging');
+    }
     m.hidden = false;
     lastFocus = document.activeElement;
     setTimeout(() => {
-      const panel = m.querySelector('.modal__panel');
       if (panel) panel.focus();
     }, 50);
     document.body.style.overflow = 'hidden';
@@ -130,6 +136,61 @@
         close();
       }
     });
+
+    /* --- Pull-to-dismiss (모바일 아래로 스와이프) --- */
+    const panel = m.querySelector('.modal__panel');
+    if (!panel) return;
+
+    let touchStartY = 0;
+    let touchDeltaY = 0;
+    let isDragging = false;
+    const THRESHOLD = 80;
+
+    panel.addEventListener('touchstart', function onStart(e) {
+      if (window.innerWidth >= 600) return;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaY = 0;
+      isDragging = false;
+    }, { passive: true });
+
+    panel.addEventListener('touchmove', function onMove(e) {
+      if (window.innerWidth >= 600) return;
+      const deltaY = e.touches[0].clientY - touchStartY;
+
+      if (panel.scrollTop <= 0 && deltaY > 0) {
+        if (!isDragging) {
+          isDragging = true;
+          panel.classList.add('dragging');
+        }
+        touchDeltaY = deltaY;
+        panel.style.transform = 'translateY(' + (deltaY * 0.5) + 'px)';
+        e.preventDefault();
+      }
+    }, { passive: false });
+
+    panel.addEventListener('touchend', function onEnd() {
+      if (!isDragging) return;
+      panel.classList.remove('dragging');
+
+      if (touchDeltaY > THRESHOLD) {
+        panel.style.transition = 'transform 0.25s ease, opacity 0.25s ease';
+        panel.style.transform = 'translateY(100%)';
+        panel.style.opacity = '0';
+
+        function onTransitionEnd() {
+          panel.removeEventListener('transitionend', onTransitionEnd);
+          panel.style.transition = '';
+          panel.style.transform = '';
+          panel.style.opacity = '';
+          close();
+        }
+        panel.addEventListener('transitionend', onTransitionEnd);
+      } else {
+        panel.style.transform = '';
+        touchDeltaY = 0;
+        isDragging = false;
+      }
+    }, { passive: true });
   }
 
   window.Modal = { open, close, bind };

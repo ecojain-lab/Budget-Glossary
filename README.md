@@ -4,11 +4,19 @@
 > 한자(漢字) · 영문(English) 표기 포함, 빌드 도구 없음, 데이터는 JSON 한 파일.
 
 [![MIT](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
-[![version](https://img.shields.io/badge/version-v0.9.6-blue.svg)]()
+[![version](https://img.shields.io/badge/version-v0.9.7-blue.svg)]()
 [![terms](https://img.shields.io/badge/terms-249-blue.svg)](./data/terms.json)
 [![no build](https://img.shields.io/badge/build-none-lightgrey.svg)]()
 
 ---
+
+## 📌 v0.9.7 변경 요약
+
+| 항목 | 변경 |
+|------|------|
+| 모달 풀투디스미스 | 스마트폰에서 용어 상세 모달을 **아래로 스와이프하여 닫기** 지원 |
+| 데스크톱 무영향 | `>= 600px` 화면에서는 기존 동작 유지 (ESC / X / 배경 클릭) |
+| 버전 | v0.9.6 → **v0.9.7** |
 
 ## 📌 v0.9.6 변경 요약
 
@@ -138,7 +146,7 @@ npm start
 | 결과 비우기 | 입력창 `✕` 버튼 또는 `Esc` |
 | 초성 점프 | ㄱ ㄴ ㄷ … EN 칩 탭 (선택된 중분류 자동 해제 후 점프) |
 | 용어 상세 | 카드 탭 → 모달 오픈 |
-| 모달 닫기 | `✕` 버튼 · 배경 탭 · `Esc` |
+| 모달 닫기 | `✕` 버튼 · 배경 탭 · `Esc` · 모바일 아래로 스와이프 |
 | 모달 공유 | 모달 열린 상태의 URL(`#term/ID`) 복사 |
 | 다크 모드 | 우상단 ☀/🌙 버튼 (선택값 저장) |
 
