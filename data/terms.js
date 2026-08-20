@@ -2,8 +2,8 @@ window.DICT_DATA = {
   "meta": {
     "title": "예산용어사전",
     "subtitle": "공공·정부 예산 중심 모바일 사전",
-    "version": "1.0.0",
-    "total": 249,
+    "version": "1.0.1",
+    "total": 288,
     "categories": {
       "cat1": {
         "id": "cat1",
@@ -587,22 +587,27 @@ window.DICT_DATA = {
       "id": "jeonyong",
       "term": "전용",
       "hanja": "轉用",
-      "termEn": "Reappropriation",
+      "termEn": "Budget Reappropriation",
       "initial": "ㅈ",
       "category": "cat1",
       "subcategory": "sub1-3",
       "summary": "예산 집행의 신축성을 부여하기 위해 행정부의 책임 하에 행정과목(세항·목) 간에 예산을 상호 융통하여 사용하는 것.",
-      "detail": "예산의 목적 외 사용은 원칙적으로 금지되지만, 예산 집행 과정의 여건 변화에 대응하기 위해 동일한 정책사업 내에서 행정과목(세항·목) 간의 융통인 전용을 인정합니다. 입법과목(장·관·항) 간 융통인 '이용'과 구별됩니다.",
+      "detail": "예산집행을 탄력적으로 운용함으로써 사업을 보다 효율적으로 추진하고 예산의 적정한 사용을 도모하기 위한 제도로서, 예산의 목적 외 사용금지에 대한 예외적인 제도라 할 수 있습니다. 예산은 예정적 계획이므로 집행 과정에서 부분적인 계획 변동이나 여건 변화가 있을 수 있습니다. 이에 대응하여 의회 승인 없이 행정과목(세항·목) 간에 예산을 상호 융통하여 사용하되, 법적 한도와 절차는 엄격히 규제됩니다.",
       "examples": [
+        "세출예산 과목간 전용",
+        "전용한도액",
         "○○정책사업 내 관간 전용"
       ],
       "related": [
         "iyong",
+        "buyongyangak",
+        "yesanbalhang",
         "iche",
-        "yesanbalhang"
+        "iwol"
       ],
       "sources": [
-        "국가재정법 제46~47조"
+        "국가재정법 제46~47조",
+        "지방재정법"
       ]
     },
     {
@@ -659,14 +664,15 @@ window.DICT_DATA = {
       "category": "cat1",
       "subcategory": "sub1-3",
       "summary": "당해 회계연도 내에 지출을 끝내지 못한 예산을 다음 회계연도로 넘겨서 사용할 수 있도록 하는 제도.",
-      "detail": "회계연도 독립의 원칙에 대한 대표적인 예외로, 사전에 국회 의결을 거치는 '명시이월'과 집행 과정에서 불가피한 사유로 발생하는 '사고이월', 그리고 여러 해에 걸친 사업 경비인 '계속비이월' 등으로 구분됩니다.",
+      "detail": "지출할 의무가 발생했으나 회계연도 내에 끝내지 못한 예산을 다음 회계연도에 넘겨서 사용하는 제도입니다. 명시이월, 사고이월, 계속비이월 등이 있으며, 예산의 단년도 원칙에 대한 예외 제도입니다. 이월되어 차년도 예산에 반영되는 구체적인 돈의 액수를 '이월액(이월금)'이라 칭하여 구별합니다.",
       "examples": [
         "이월액 1,200억원"
       ],
       "related": [
         "myeongsiiwolbi",
         "sagongiulbi",
-        "iyong"
+        "iyong",
+        "iwolaek"
       ],
       "sources": [
         "국가재정법"
@@ -674,7 +680,7 @@ window.DICT_DATA = {
     },
     {
       "id": "buyongyangak",
-      "term": "불용액",
+      "term": "불용액 (집행잔액)",
       "hanja": "不用額",
       "termEn": "Lapsed Appropriation",
       "initial": "ㅂ",
@@ -1526,23 +1532,28 @@ window.DICT_DATA = {
     },
     {
       "id": "gukgobojogeum",
-      "term": "국고보조금",
+      "term": "국고보조금 (국비)",
       "hanja": "國庫補助金",
       "termEn": "National Subsidy",
       "initial": "ㄱ",
       "category": "cat2",
       "subcategory": "sub2-3",
       "summary": "국가 외의 자치단체·법인·개인 등에 지원하는 보조금.",
-      "detail": "보통 '보조금'이라 부르며, 보조금의 예산 및 관리에 관한 법률(보조금법)에 의해 관리됩니다. 교부 조건(용도·사용기준·사업량 등)에 따라 집행되며, 사후 정산·점검 대상입니다.",
+      "detail": "국가가 지방자치단체, 법인, 개인 등에 특정 사업의 수행을 장려하거나 재정을 돕기 위해 지급하는 보조금입니다. 사업비의 전액을 국가가 지원하는 방식과 사업비의 일부만 지원하고 나머지는 지방자치단체가 부담하도록 매칭(Matching)하는 방식이 있습니다. 중앙행정기관의 장이 지방자치단체의 재정부담을 수반하는 보조금을 교부하기로 통지한 경우 즉시 기획재정부장관과 행정안전부장관에게 통지해야 합니다.",
       "examples": [
+        "교육 보조금",
+        "매칭펀드 방식 국고보조",
         "사회보장 보조금",
-        "교육 보조금"
+        "국고보조금 사업"
       ],
       "related": [
+        "jibang-gyobu-se",
         "jibangse",
-        "jibang-gyobu-se"
+        "jibangbojogeum",
+        "보조재원"
       ],
       "sources": [
+        "보조금 관리에 관한 법률",
         "보조금법"
       ]
     },
@@ -1635,25 +1646,28 @@ window.DICT_DATA = {
     },
     {
       "id": "ilban-hoegyesuipdan-yesan",
-      "term": "일반회계",
+      "term": "일반회계 (일반회계예산)",
       "hanja": "一般會計",
       "termEn": "General Account",
       "initial": "ㅇ",
       "category": "cat3",
       "subcategory": "sub3-1",
       "summary": "국가·자치단체의 일반 행정기능 수행에 필요한 기본 회계.",
-      "detail": "특정 목적이 아닌 일반적·항구적 재정활동에 관한 총세입·총세출을 포괄합니다. 예산이라 함은 통상 일반회계 예산을 가리킵니다. 조세수입이 일반적 지출에 사용되는 핵심 회계입니다.",
+      "detail": "특정 목적이 아닌 일반적·항구적 재정활동에 관한 총세입·총세출을 포괄합니다. 주민의 세금을 주 재원으로 하여 일반행정 기능 유지를 위한 기본적이고 기초적인 행정수요에 쓰이며, 정부나 지방자치단체의 예산이라 함은 통상적으로 일반회계 예산을 지칭합니다.",
       "examples": [
-        "2024년 일반회계 결산"
+        "2024년 일반회계 결산",
+        "일반회계 본예산",
+        "일반회계 추가경정예산"
       ],
       "related": [
+        "gyoyugbi-teugbyeol-hoegye",
+        "chonggye-yesan",
         "teugbyeol-hoegye",
-        "gigum",
-        "chonggye-yesan"
+        "gigum"
       ],
       "sources": [
-        "국가재정법",
-        "지방재정법"
+        "지방재정법",
+        "국가재정법"
       ]
     },
     {
@@ -2635,26 +2649,6 @@ window.DICT_DATA = {
       ]
     },
     {
-      "id": "pumum-byeol-yesan",
-      "term": "품목별 예산",
-      "hanja": "品目別 豫算",
-      "termEn": "Line-Item Budgeting",
-      "initial": "ㅍ",
-      "category": "cat5",
-      "subcategory": "sub5-2",
-      "summary": "지출의 대상·성질을 기준으로 분류해 금액을 나타내는 전통적 예산 방식.",
-      "detail": "인건비·물품비·여비·업무추진비 등 품목으로 구분하며, 집행 통제와 회계 투명성에는 강점이 있으나 정책·사업과의 연결성이 약해 성과관리에는 한계가 있습니다.",
-      "examples": [
-        "품목별 예산안"
-      ],
-      "related": [
-        "peurogeulaem-yesanje"
-      ],
-      "sources": [
-        "열린재정"
-      ]
-    },
-    {
       "id": "seonggwa-yeong-gwajeong",
       "term": "성과영향평가",
       "hanja": "成果影響評價",
@@ -2900,13 +2894,14 @@ window.DICT_DATA = {
       "category": "cat6",
       "subcategory": "sub6-4",
       "summary": "지방자치단체가 자체 권한으로 확보하는 재정수입.",
-      "detail": "지방세·세외수입·사용료·수수료 등이 있습니다. 자주재원 비율이 높을수록 재정 자주성이 높아집니다. 한국은 지방세 비중이 낮아 자주재원 확보가 재정 분권의 핵심 과제 중 하나입니다.",
+      "detail": "지방세·세외수입 등 자체수입 외에, 용도가 지정되지 않아 지방자치단체가 자주적으로 사용할 수 있는 재원(지방교부세, 조정교부금 등)을 포함하는 개념입니다. 자주재원 비율이 높을수록 지방자치단체의 재정 자주성이 향상됩니다. 지자체가 법적 권한에 의해 스스로 조달하는 순수 '자체재원'과는 구분됩니다.",
       "examples": [
         "자주재원 비율 30%"
       ],
       "related": [
         "jibangse",
-        "ilban-jaewon-teukjeongjaewon"
+        "ilban-jaewon-teukjeongjaewon",
+        "자체재원"
       ],
       "sources": [
         "지방재정법"
@@ -3203,29 +3198,6 @@ window.DICT_DATA = {
       ],
       "sources": [
         "지방교부세법"
-      ]
-    },
-    {
-      "id": "국고보조",
-      "term": "국고보조",
-      "hanja": "國庫補助",
-      "termEn": "National Treasury Subsidy",
-      "initial": "ㄱ",
-      "category": "cat2",
-      "subcategory": "sub2-3",
-      "summary": "국가가 지방자치단체에 보조하는 부담금, 교부금, 보조금(협의)를 포괄해서 국고보조라 함. 국고보조는...",
-      "detail": "국가가 지방자치단체에 보조하는 부담금, 교부금, 보조금(협의)를 포괄해서 국고보조라 함. 국고보조는 사업비의 전액을 국가에서 지원하는 방식과 사업비의 일부만 지원하고 나머지는 지방자치단체에 부담시키는 방식이 있는데, 중앙행정기관의 장이 지방자치단체의 재정부담을 수반하는 보조금을 지방자치단체에 교부하기로 결정 통지한 때에는 즉시 기획재정부장관과 행정안전부장관에게 통지하여야 함.",
-      "examples": [
-        "국고보조금 사업",
-        "매칭펀드 방식 국고보조"
-      ],
-      "related": [
-        "gukgobojogeum",
-        "jibangbojogeum",
-        "보조재원"
-      ],
-      "sources": [
-        "보조금 관리에 관한 법률"
       ]
     },
     {
@@ -4400,30 +4372,6 @@ window.DICT_DATA = {
       ]
     },
     {
-      "id": "예산의-전용",
-      "term": "예산의 전용",
-      "hanja": "豫算의 轉用",
-      "termEn": "Budget Reappropriation",
-      "initial": "ㅇ",
-      "category": "cat1",
-      "subcategory": "sub1-3",
-      "summary": "예산집행을 탄력적으로 운용함으로써 사업을 보다 효율적으로 추진하고 예산의 적정한 사용을 도모하기 위한 제도입니다.",
-      "detail": "예산집행을 탄력적으로 운용함으로써 사업을 보다 효율적으로 추진하고 예산의 적정한 사용을 도모하기 위한 제도로서 예산의 목적 외 사용금지에 대한 예외적인 제도라 할 수 있습니다. 예산은 어디까지나 예정적 계획이므로 예산의 집행과정에서 부분적인 계획의 변동이나 여건의 변동 등이 있을 수 있습니다. 따라서 예산을 전용할 때에는 이러한 계획이나 여건의 변동에 대응하여 행정과목(세항·목) 간에 융통하여 사용합니다.",
-      "examples": [
-        "세출예산 과목간 전용",
-        "전용한도액"
-      ],
-      "related": [
-        "iyong",
-        "iche",
-        "iwol",
-        "buyongyangak"
-      ],
-      "sources": [
-        "지방재정법"
-      ]
-    },
-    {
       "id": "예산의-종류",
       "term": "예산의 종류",
       "hanja": "豫算의 種類",
@@ -4540,28 +4488,6 @@ window.DICT_DATA = {
         "인건비",
         "행정운영경비",
         "기본경비"
-      ],
-      "sources": [
-        "지방재정법"
-      ]
-    },
-    {
-      "id": "일반회계예산",
-      "term": "일반회계예산",
-      "hanja": "一般會計豫算",
-      "termEn": "General Account Budget",
-      "initial": "ㅇ",
-      "category": "cat3",
-      "subcategory": "sub3-1",
-      "summary": "주민의 세금을 재원으로 일반행정 기능유지를 위한 기본적이고 기초적인 행정수요에 쓰이는 예산입니다.",
-      "detail": "주민의 세금을 재원으로 일반행정 기능유지를 위한 기본적이고 기초적인 행정수요에 쓰이는 예산으로, 정부나 지방자치단체의 예산이라 함은 통상적으로 일반회계 예산을 말합니다.",
-      "examples": [
-        "일반회계 본예산",
-        "일반회계 추가경정예산"
-      ],
-      "related": [
-        "teugbyeol-hoegye",
-        "gyoyugbi-teugbyeol-hoegye"
       ],
       "sources": [
         "지방재정법"
@@ -4741,7 +4667,7 @@ window.DICT_DATA = {
       "category": "cat2",
       "subcategory": "sub2-1",
       "summary": "보조재원과 상대되는 개념으로서, 지방자치단체가 사업을 시행하기 위하여 자체적으로 재원을 조달하는 경우...",
-      "detail": "보조재원과 상대되는 개념으로서, 지방자치단체가 사업을 시행하기 위하여 자체적으로 재원을 조달하는 경우 동 재원을 자체재원이라 하며, 자체재원에 의한 사업을 자체재원사업이라 함.",
+      "detail": "보조재원(국고보조금 등)과 상대되는 개념으로서, 지방자치단체가 외부의 지원 없이 법적 권한에 의해 자체적으로 조달하는 재원(지방세수입, 세외수입 등)을 말합니다. 자체재원에 의해 추진하는 사업을 자체사업이라 하며, 용도가 한정되지 않고 지원되는 지방교부세 등을 포함하는 '자주재원'보다 좁은 범위의 개념입니다.",
       "examples": [
         "지방세수입",
         "세외수입",
@@ -4750,7 +4676,8 @@ window.DICT_DATA = {
       "related": [
         "보조재원",
         "가용재원",
-        "자체수입"
+        "자체수입",
+        "jajujaewon"
       ],
       "sources": [
         "지방재정법"
@@ -5706,25 +5633,27 @@ window.DICT_DATA = {
     },
     {
       "id": "품목예산제도",
-      "term": "품목예산제도",
+      "term": "품목예산제도 (품목별 예산)",
       "hanja": "品目豫算制度",
       "termEn": "Line-Item Budgeting System",
       "initial": "ㅍ",
       "category": "cat5",
       "subcategory": "sub5-2",
       "summary": "예산을 '사업' 중심으로 운영하는 사업예산제도와 상대되는 개념으로서, 예산 편성 및 심의 등의 과정이...",
-      "detail": "예산을 '사업' 중심으로 운영하는 사업예산제도와 상대되는 개념으로서, 예산 편성 및 심의 등의 과정이 '품목' 중심으로 이루어짐으로써 재원 배분의 본래 목적이라 할 수 있는 사업의 성과가 명확하지 못한 등의 단점을 가진 예산제도를 말하며, 품목 중심으로 편성된 예산을 품목예산이라고 함.",
+      "detail": "예산을 '사업' 중심으로 운영하는 사업예산제도와 상대되는 개념으로서, 예산 편성 및 심의 등의 과정이 '품목' 중심으로 이루어지는 전통적인 예산 방식입니다. 인건비·물품비·여비·업무추진비 등 지출의 대상과 성질을 기준으로 분류하여 금액을 나타내므로, 집행 통제와 회계 투명성에는 강점이 있으나 재원 배분의 본래 목적인 사업 성과가 명확하지 못한 한계가 있습니다.",
       "examples": [
-        "품목별 예산편성",
-        "품목중심 예산운영"
+        "품목별 예산안",
+        "품목중심 예산운영",
+        "품목별 예산편성"
       ],
       "related": [
-        "사업예산제도",
+        "품목",
         "peurogeulaem-yesanje",
-        "품목"
+        "사업예산제도"
       ],
       "sources": [
-        "지방재정법"
+        "지방재정법",
+        "열린재정"
       ]
     },
     {
@@ -5823,6 +5752,991 @@ window.DICT_DATA = {
       ],
       "sources": [
         "지방재정법"
+      ]
+    },
+    {
+      "id": "josebudamryul",
+      "term": "조세부담률",
+      "hanja": "租稅負擔率",
+      "termEn": "Tax Burden Ratio",
+      "initial": "ㅈ",
+      "category": "cat4",
+      "subcategory": "sub4-1",
+      "summary": "국민이 1년 동안 납부한 세금(국세+지방세) 총액이 명목 국내총생산(GDP)에서 차지하는 비율.",
+      "detail": "한 나라의 국민이 벌어들인 총소득 중에서 얼마만큼을 세금으로 내고 있는지를 나타내는 대표적인 거시 재정지표입니다. 조세부담률이 높다는 것은 국민의 세금 부담이 크고 정부가 쓸 수 있는 재원(재정규모)이 상대적으로 크다는 것을 의미합니다. 국제 비교 시 국가의 재정 규모와 복지 수준을 가늠하는 척도로 쓰입니다.",
+      "examples": [
+        "한국의 조세부담률 22%",
+        "OECD 평균 조세부담률"
+      ],
+      "related": [
+        "gukgese",
+        "jibangse",
+        "gukminbudamryul"
+      ],
+      "sources": [
+        "열린재정 재정용어사전",
+        "기획재정부"
+      ]
+    },
+    {
+      "id": "gukminbudamryul",
+      "term": "국민부담률",
+      "hanja": "國民負擔率",
+      "termEn": "National Burden Ratio",
+      "initial": "ㄱ",
+      "category": "cat4",
+      "subcategory": "sub4-1",
+      "summary": "조세(세금)뿐만 아니라 국민연금, 건강보험 등 각종 사회보장기여금까지 합친 금액이 명목 GDP에서 차지하는 비율.",
+      "detail": "조세부담률에 4대 공적연금 및 건강보험, 고용보험, 산재보험 등 준조세 성격의 '사회보장기여금'을 더하여 산출합니다. 국민이 국가에 의무적으로 납부해야 하는 실질적인 총부담 수준을 보여주는 지표로, 조세부담률보다 항상 높게 나타납니다.",
+      "examples": [
+        "국민부담률 30% 돌파",
+        "사회보장기여금 증가에 따른 국민부담률 상승"
+      ],
+      "related": [
+        "josebudamryul",
+        "sahoe-bojang-seong-gigum"
+      ],
+      "sources": [
+        "열린재정 재정용어사전",
+        "OECD 통계"
+      ]
+    },
+    {
+      "id": "guksegamnyeonryul",
+      "term": "국세감면율",
+      "hanja": "國稅減免率",
+      "termEn": "National Tax Exemption Rate",
+      "initial": "ㄱ",
+      "category": "cat4",
+      "subcategory": "sub4-3",
+      "summary": "정부가 걷어야 할 국세 총액(국세수입+국세감면액) 중에서 비과세·감면 등으로 포기한 세수(국세감면액)가 차지하는 비율.",
+      "detail": "특정 산업 지원이나 취약계층 보호를 위해 세금을 깎아주는 조세지출의 규모가 전체 세수 대비 어느 정도인지 보여주는 지표입니다. 국가재정법은 무분별한 세금 감면을 막기 위해 직전 3개년 평균 국세감면율에 0.5%p를 더한 선을 넘지 않도록 '국세감면 한도제'를 운영하고 있습니다.",
+      "examples": [
+        "국세감면율 법정 한도 초과",
+        "조세지출 정비"
+      ],
+      "related": [
+        "josejichul",
+        "조세지출예산제도",
+        "jaejeonggeonjeonseong"
+      ],
+      "sources": [
+        "열린재정 재정용어사전",
+        "국가재정법"
+      ]
+    },
+    {
+      "id": "chongsaupbigwanrijedo",
+      "term": "총사업비 관리제도",
+      "hanja": "總事業費 管理制度",
+      "termEn": "Total Project Cost Management System",
+      "initial": "ㅊ",
+      "category": "cat1",
+      "subcategory": "sub1-4",
+      "summary": "대규모 공공 투자사업의 추진 과정에서 사업비가 무분별하게 늘어나는 것을 막기 위해 기획재정부가 총사업비를 단계별로 엄격히 관리하는 제도.",
+      "detail": "국가 예산이나 기금이 투입되는 대규모 사업(토목·정보화 등) 중 총사업비가 500억 원 이상(국비 300억 원 이상)인 사업을 대상으로 합니다. 예비타당성조사를 통과한 이후에도 기본설계, 실시설계, 시공 등 각 단계마다 총사업비가 일정 비율 이상 증가하면 타당성 재조사를 받도록 하여 재정 낭비를 방지합니다.",
+      "examples": [
+        "총사업비 변경 협의",
+        "타당성 재조사 대상"
+      ],
+      "related": [
+        "yebitadangseongjosa",
+        "gyesokbi"
+      ],
+      "sources": [
+        "열린재정 재정용어사전",
+        "국가재정법"
+      ]
+    },
+    {
+      "id": "jogijiphaeng",
+      "term": "조기집행",
+      "hanja": "早期執行",
+      "termEn": "Early Execution (of Budget)",
+      "initial": "ㅈ",
+      "category": "cat1",
+      "subcategory": "sub1-3",
+      "summary": "경기 침체에 대응하기 위해 정부가 예산을 하반기보다 상반기에 집중적으로 앞당겨 쓰는 재정 운용 방식.",
+      "detail": "민간 시장의 활력이 떨어질 때 정부 지출을 늘려 마중물 역할을 하기 위한 정책입니다. 주로 일자리 창출, SOC(사회간접자본) 등 경제적 파급효과가 큰 예산을 중심으로 상반기에 예산을 배정하고 신속하게 집행(계약 및 대금 지급)하도록 독려합니다.",
+      "examples": [
+        "상반기 재정 신속집행 목표 65%",
+        "지자체 조기집행 실적 평가"
+      ],
+      "related": [
+        "yesanbaejeong",
+        "jiphyeongrul",
+        "yesanbalhang"
+      ],
+      "sources": [
+        "열린재정 재정용어사전",
+        "기획재정부"
+      ]
+    },
+    {
+      "id": "jibangsomyeoldaeeunggigum",
+      "term": "지방소멸대응기금",
+      "hanja": "地方消滅對應基金",
+      "termEn": "Local Extinction Response Fund",
+      "initial": "ㅈ",
+      "category": "cat6",
+      "subcategory": "sub6-4",
+      "summary": "인구 감소로 인해 소멸 위기에 처한 지방자치단체를 지원하기 위해 중앙정부가 조성하여 배분하는 재원.",
+      "detail": "지역 인구 감소 문제를 해결하고 국가 균형발전을 도모하기 위해 2022년 도입된 기금입니다. 향후 10년간 매년 1조 원 규모로 정부출연금을 통해 조성되며, 행정안전부가 지정한 인구감소지역 및 관심지역의 자치단체가 제출한 투자계획을 평가하여 차등 배분합니다.",
+      "examples": [
+        "인구감소지역 기금 배분",
+        "지방소멸대응기금 투자계획서 제출"
+      ],
+      "related": [
+        "jibang-gyobu-se",
+        "ilban-jaewon-teukjeongjaewon"
+      ],
+      "sources": [
+        "열린재정 재정용어사전",
+        "지방자치단체 기금관리기본법"
+      ]
+    },
+    {
+      "id": "sanchulgeungeo",
+      "term": "산출근거",
+      "hanja": "算出根據",
+      "termEn": "Basis of Calculation",
+      "initial": "ㅅ",
+      "category": "cat1",
+      "subcategory": "sub1-1",
+      "summary": "예산 금액이 어떻게 계산되었는지 보여주는 구체적인 공식 (예: 단가 × 수량 × 횟수).",
+      "detail": "주민 심의 시 예산 낭비나 과다 계상 여부를 파악하는 가장 기본적인 데이터입니다. 예산서나 사업설명서에 '강사수당 150,000원 × 2명 × 10회 = 3,000,000원'처럼 투명하게 기재되어야 하며, 이 근거가 모호할 경우 주민위원의 삭감 1순위 대상이 됩니다.",
+      "examples": [
+        "산출근거 명세 요구",
+        "단가 및 수량 과다 계상"
+      ],
+      "related": [
+        "ilsik",
+        "yesanyogu"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준",
+        "주민참여예산 교육자료"
+      ]
+    },
+    {
+      "id": "ilsik",
+      "term": "1식 (일식)",
+      "hanja": "一式",
+      "termEn": "Lump Sum (1 Lot)",
+      "initial": "ㅇ",
+      "category": "cat1",
+      "subcategory": "sub1-1",
+      "summary": "세부적인 단가나 물량 산출 없이, 뭉뚱그려 총액으로만 표기하는 예산 산출 방식.",
+      "detail": "예를 들어 '홈페이지 개편 1식: 5,000만 원', '행사 운영비 1식: 3,000만 원'처럼 세부 내역을 숨길 때 자주 등장하는 표기법입니다. 투명성을 해치는 대표적인 관행이므로, 주민위원은 '1식'으로 표기된 예산에 대해 반드시 세부 명세서(쪼갠 내역)를 요구해야 합니다.",
+      "examples": [
+        "홍보물 제작 1식",
+        "1식 예산 세부내역 요구"
+      ],
+      "related": [
+        "sanchulgeungeo"
+      ],
+      "sources": [
+        "주민참여예산 교육자료 (심의 팁)"
+      ]
+    },
+    {
+      "id": "maechingsaup",
+      "term": "매칭사업 (지방비 부담)",
+      "hanja": "Matching 事業",
+      "termEn": "Matching Fund Project",
+      "initial": "ㅁ",
+      "category": "cat2",
+      "subcategory": "sub2-3",
+      "summary": "국비나 광역지자체(시·도) 예산이 지원될 때, 기초지자체(시·군·구)도 정해진 비율만큼 자체 예산을 의무적으로 보태야 하는 사업.",
+      "detail": "예를 들어 국비 70%, 시비 15%, 구비 15% 비율로 진행되는 사업입니다. 주민위원이 사업 효과가 없다고 판단해 '구비(기초지자체 예산)'를 전액 삭감해버리면, 매칭 조건이 깨져 거액의 국비 지원금까지 모두 반납해야 하는 사태가 발생하므로 심의 시 재원 구성(비율)을 꼼꼼히 확인해야 합니다.",
+      "examples": [
+        "국비 매칭 비율 50%",
+        "지방비 의무 부담액"
+      ],
+      "related": [
+        "gukgobojogeum",
+        "ilban-jaewon-teukjeongjaewon"
+      ],
+      "sources": [
+        "지방재정법",
+        "보조금 관리에 관한 법률"
+      ]
+    },
+    {
+      "id": "ilmolje",
+      "term": "예산 일몰제",
+      "hanja": "豫算 日沒制",
+      "termEn": "Sunset Provision",
+      "initial": "ㅇ",
+      "category": "cat5",
+      "subcategory": "sub5-2",
+      "summary": "일정 기간이 지나거나 성과가 부진한 사업을 기득권에 얽매이지 않고 원점에서 재검토하여 자동 폐지(종료)하는 제도.",
+      "detail": "지자체는 통상 3년 주기로 관행적으로 이어져 온 '계속사업'의 성과를 평가합니다. 주민위원은 시대에 뒤떨어지거나 주민 수혜도가 낮은 선심성 사업, 행사성 사업에 대해 '일몰(사업 폐지)'을 강력히 권고하여 신규 사업을 위한 가용재원을 확보할 수 있습니다.",
+      "examples": [
+        "3년 연속 성과 부진 사업 일몰",
+        "행사성 예산 일몰 권고"
+      ],
+      "related": [
+        "sahupyeongga",
+        "seonggwamogpyo"
+      ],
+      "sources": [
+        "지방재정법",
+        "행정안전부 예산편성지침"
+      ]
+    },
+    {
+      "id": "pool-yesan",
+      "term": "풀(Pool) 예산 / 포괄예산",
+      "hanja": "Pool 豫算",
+      "termEn": "Pool Budget (Blanket Budget)",
+      "initial": "ㅍ",
+      "category": "cat1",
+      "subcategory": "sub1-1",
+      "summary": "구체적인 사업 명세나 사용처를 사전에 정하지 않고, 총액으로만 묶어두었다가 연중 필요할 때 배분하여 쓰는 예산.",
+      "detail": "'소규모 주민숙원사업비', '재해복구비', '포괄사업비' 등이 대표적입니다. 긴급한 상황에 유연하게 대처하기 위한 명목이지만, 자칫 부서장이나 단체장의 '쌈짓돈'처럼 불투명하게 쓰일 우려가 크므로 주민위원이 배분 기준과 집행 내역을 각별히 감시해야 하는 예산입니다.",
+      "examples": [
+        "소규모 주민숙원사업 풀예산",
+        "포괄비 집행내역 공개 요구"
+      ],
+      "related": [
+        "yebi",
+        "sanchulgeungeo"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "seonggwajipyo_kpi",
+      "term": "성과지표 (KPI)",
+      "hanja": "成果指標",
+      "termEn": "Key Performance Indicator",
+      "initial": "ㅅ",
+      "category": "cat5",
+      "subcategory": "sub5-2",
+      "summary": "예산이 투입된 사업이 성공적으로 수행되었는지 객관적으로 평가하기 위해 사전에 설정하는 측정 기준.",
+      "detail": "사업설명서 분석 시 주민위원이 가장 눈여겨봐야 할 항목입니다. '주민 만족도 향상'이나 '안전 증진' 같은 추상적인 표현은 좋은 지표가 아닙니다. '시설 이용객 20% 증가', '안전사고 발생 건수 30% 감소'처럼 수치화되고 측정이 가능한지 점검해야 합니다.",
+      "examples": [
+        "정량적 성과지표 요구",
+        "이용률 20% 향상 (KPI)"
+      ],
+      "related": [
+        "seonggwa-yehoegseo",
+        "seonggwamogpyo"
+      ],
+      "sources": [
+        "주민참여예산 교육자료 (사업설명서 분석)"
+      ]
+    },
+    {
+      "id": "ilbanjojeonggyobugeum",
+      "term": "일반조정교부금",
+      "hanja": "一般調整交付金",
+      "termEn": "General Control Grant (General Adjustment Grant)",
+      "initial": "ㅇ",
+      "category": "cat2",
+      "subcategory": "sub2-3",
+      "summary": "광역자치단체가 관할 기초자치단체의 일반적인 행정 운영에 필요한 재원을 보충하기 위해 지급하는 자금.",
+      "detail": "전체 조정교부금의 약 90%를 차지하는 핵심적인 기본 교부금으로서, 기초자치단체 간의 재정 격차를 조정하는 역할을 수행합니다. 재원 배분은 인구수, 해당 지역의 세수 규모, 재정력지수와 같은 객관적인 지표를 기준으로 삼아 체계적으로 이루어집니다. 특정 사업에 용도가 제한되지 않는 일반 재원의 성격을 띠고 있어, 이를 교부받은 시·군·구는 각자의 행정 수요에 맞춰 자율적으로 예산을 운용할 수 있습니다.",
+      "examples": [
+        "시·군 일반조정교부금 배분",
+        "자치구 재원 조정을 위한 일반조정교부금"
+      ],
+      "related": [
+        "teukbyeoljojeonggyobugeum",
+        "jojeonggyobugeum",
+        "jaejeonglyeokjisu"
+      ],
+      "sources": [
+        "지방재정법",
+        "행정안전부"
+      ]
+    },
+    {
+      "id": "teukbyeoljojeonggyobugeum",
+      "term": "특별조정교부금",
+      "hanja": "特別調整交付金",
+      "termEn": "Special Control Grant (Special Adjustment Grant)",
+      "initial": "ㅌ",
+      "category": "cat2",
+      "subcategory": "sub2-3",
+      "summary": "광역자치단체장이 지역의 특정한 현안이나 긴급한 재정 수요에 대응하기 위해 선택적으로 배분하는 예산.",
+      "detail": "전체 조정교부금의 약 10%를 차지하며, 지역 간의 격차를 줄이기보다 예산 지원이 필요한 상황이 발생했을 때 신속하게 자금을 투입하는 데 중점을 둡니다. 지역 민원 해결이나 재난 대응처럼 갑작스러운 재정 지원이 필요할 때 활용되는 지정 교부금의 성격을 띠고 있습니다. 대표적으로 폭우 피해에 대한 응급 복구나 산업단지의 기반시설 조성, 지역의 문화·복지 사업 등을 지원하는 데 사용됩니다.",
+      "examples": [
+        "재해 복구를 위한 특별조정교부금 신청",
+        "지역 현안 사업비 특별조정교부금 지원"
+      ],
+      "related": [
+        "ilbanjojeonggyobugeum",
+        "jojeonggyobugeum"
+      ],
+      "sources": [
+        "지방재정법",
+        "행정안전부"
+      ]
+    },
+    {
+      "id": "jaejeonglyeokjisu",
+      "term": "재정력지수",
+      "hanja": "財政力指數",
+      "termEn": "Financial Power Index",
+      "initial": "ㅈ",
+      "category": "cat4",
+      "subcategory": "sub4-1",
+      "summary": "지방자치단체가 스스로 벌어들이는 자치수입으로 기본적 재정수요를 얼마나 충당할 수 있는지를 나타내는 지표.",
+      "detail": "지방교부세법에 의거한 재정력지수는 지방자치단체의 재정여건을 보여주는 대표적인 정량적 지표입니다. 기준재정수입액을 기준재정수요액으로 나누어 산출하며, 지수 1.0은 자치수입과 기본 행정비용이 일치함을 의미합니다. 지수가 1.0 미만인 지자체를 대상으로 보통교부세를 배분하여 재정 부족분을 보전하므로 보통교부세 산정과 밀접한 연계성을 가집니다. 주민참여예산제도 운영 시에도 지수가 높은 자치단체는 공모 규모를 비교적 크게 설정하며, 성과평가 시 재정력이 취약한 지자체가 불이익을 받지 않도록 그룹별 비교 평가를 실시하는 기준이 됩니다.",
+      "examples": [
+        "재정력지수 1.0 미만 지자체 보통교부세 지원",
+        "행안부 성과평가 시 재정력지수 고려"
+      ],
+      "related": [
+        "jibang-gyobu-se",
+        "botonggyobuse",
+        "jache-suib"
+      ],
+      "sources": [
+        "지방교부세법",
+        "행정안전부"
+      ]
+    },
+    {
+      "id": "gyeolsanseo",
+      "term": "결산서",
+      "hanja": "決算書",
+      "termEn": "Settlement Report",
+      "initial": "ㄱ",
+      "category": "cat5",
+      "subcategory": "sub5-1",
+      "summary": "한 회계연도 동안 집행된 세입과 세출의 실제 결과를 정리하여 작성하는 문서.",
+      "detail": "지방자치단체장 또는 정부가 회계연도 종료 후 예산 집행 결과를 기록하여 의회에 제출하고 승인을 받기 위해 작성하는 보고서입니다. 결산서에는 세입세출결산, 재무제표, 성과보고서 등이 포함됩니다.",
+      "examples": [
+        "2024 회계연도 결산서",
+        "지방자치단체 결산서 제출"
+      ],
+      "related": [
+        "gyeolsan",
+        "seipsechulyesanan",
+        "seonggwabogoseo"
+      ],
+      "sources": [
+        "지방회계법",
+        "지방자치법"
+      ]
+    },
+    {
+      "id": "gonggong-un-yeongbi",
+      "term": "공공운영비",
+      "hanja": "公共運營費",
+      "termEn": "Public Operating Expenses",
+      "initial": "ㄱ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "기관이나 부서의 기본적인 운영 및 공공시설 유지를 위해 지출하는 경비.",
+      "detail": "공공요금(전기료, 수도료, 통신비), 시설장비 유지비, 유류비 등 공공기관의 원활한 행정 수행과 유지를 위해 반복적으로 지출되는 기본 경비입니다.",
+      "examples": [
+        "부서 전기요금 납부",
+        "복사기 유지보수비"
+      ],
+      "related": [
+        "samugwanlibi",
+        "haengjeong-un-yeong-gyeongbi"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "gita-bosanggeum",
+      "term": "기타보상금",
+      "hanja": "其他補償金",
+      "termEn": "Other Compensations",
+      "initial": "ㄱ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "법령 또는 조례에 의거하여 민간인에게 지급하는 보상금 중 다른 목에 속하지 않는 경비.",
+      "detail": "주민자치위원 수당, 각종 위원회 참석 수당, 공청회나 행사 참석 시 지급하는 실비 성격의 수당 및 보상금 등 민간인의 행정 참여나 협조에 대해 지급하는 경비입니다.",
+      "examples": [
+        "위원회 참석 수당",
+        "시민 옴부즈만 활동 보상금"
+      ],
+      "related": [
+        "haengsasilbijiwongeum",
+        "samugwanlibi"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "mingan-gyeongsang-sayeopbojo",
+      "term": "민간경상사업보조",
+      "hanja": "民間經常事業補助",
+      "termEn": "Subsidies for Private Operational Projects",
+      "initial": "ㅁ",
+      "category": "cat2",
+      "subcategory": "sub2-3",
+      "summary": "민간이 권장하는 사업을 수행하는 데 필요한 운영비나 사업비를 지원하는 보조금.",
+      "detail": "자치단체가 직접 수행하지 않고 민간단체나 개인이 행하는 경상적 사업에 대하여 재정적인 원조를 제공하는 보조금입니다. 일시적인 자본 형성적 지출이 아닌 연도별로 지속되는 경상 활동을 지원합니다.",
+      "examples": [
+        "지역 복지관 운영 보조금",
+        "문화예술단체 활동 지원비"
+      ],
+      "related": [
+        "jibangbojogeum",
+        "mingan-itakgeum"
+      ],
+      "sources": [
+        "지방재정법",
+        "지방자치단체 보조금 관리에 관한 법률"
+      ]
+    },
+    {
+      "id": "mingan-itakgeum",
+      "term": "민간위탁금",
+      "hanja": "民間委託金",
+      "termEn": "Consignment Fees for Private Sector",
+      "initial": "ㅁ",
+      "category": "cat2",
+      "subcategory": "sub2-3",
+      "summary": "지자체의 사무를 민간 전문기관이나 단체에 위탁하여 수행할 때 지급하는 대가.",
+      "detail": "공공기관의 업무 중 민간의 전문성을 활용하는 것이 효율적인 사무를 민간에 위탁하고, 이에 필요한 인건비와 운영비 등을 예산으로 보전해 주는 경비입니다.",
+      "examples": [
+        "어린이집 민간위탁비",
+        "지자체 체육시설 위탁 운영금"
+      ],
+      "related": [
+        "mingan-itaksayeopbi",
+        "mingan-gyeongsang-sayeopbojo"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준",
+        "지방재정법"
+      ]
+    },
+    {
+      "id": "mingan-itaksayeopbi",
+      "term": "민간위탁사업비",
+      "hanja": "民間委託事業費",
+      "termEn": "Private Consignment Project Costs",
+      "initial": "ㅁ",
+      "category": "cat2",
+      "subcategory": "sub2-3",
+      "summary": "민간위탁 사무 중 특정 사업이나 시설의 설치·대규모 정비 등 자본적 성격의 사업을 대행시킬 때 지급하는 비용.",
+      "detail": "민간위탁금은 주로 경상적 운영 성격을 띠는 반면, 민간위탁사업비는 위탁시설의 신축이나 리모델링 등 시설 정비나 자본 형성을 수반하는 특정 대행 사업에 지급되는 재원입니다.",
+      "examples": [
+        "위탁 복지시설 리모델링 사업비",
+        "청소 대행업체 장비 구입 지원"
+      ],
+      "related": [
+        "mingan-itakgeum",
+        "siseolbi"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "beopjeongjichul",
+      "term": "법정지출",
+      "hanja": "法定支出",
+      "termEn": "Statutory Expenditure",
+      "initial": "ㅂ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "법령에 의하여 지출의 의무가 정해져 있어 자치단체가 임의로 삭감하거나 조정할 수 없는 지출.",
+      "detail": "공무원 연금부담금, 법정 부담금, 지방채 원리금 상환액 등 법률에 의해 반드시 예산에 편성하여 지출해야 하는 경비입니다. 예산 심의 시 삭감이 불가능한 경직성 예산의 핵심입니다.",
+      "examples": [
+        "국민건강보험법에 따른 자치단체 부담금",
+        "지방채 원리금 상환"
+      ],
+      "related": [
+        "uimujichul",
+        "beopjeog-uimujeog-gyeongbi"
+      ],
+      "sources": [
+        "지방재정법",
+        "지방자치법"
+      ]
+    },
+    {
+      "id": "bojeonsuib-deung-mit-naebugoleo",
+      "term": "보전수입 등 및 내부거래",
+      "hanja": "補塡收入 등 및 內部交易",
+      "termEn": "Financial Financing Receipts & Internal Transactions",
+      "initial": "ㅂ",
+      "category": "cat2",
+      "subcategory": "sub2-1",
+      "summary": "지자체의 재정 부족을 메우기 위한 보전수입과 회계·기금 간에 자금을 주고받는 내부 거래 수입.",
+      "detail": "전년도에서 이월된 순세계잉여금, 차입금 등 재정 부족액을 메우기 위해 조달하는 보전수입과, 일반회계·특별회계·기금 상호 간에 재원을 이전하는 내부거래를 세입 측면에서 통합하여 부르는 과목입니다.",
+      "examples": [
+        "순세계잉여금 전입",
+        "통합재정안정화기금 예수금"
+      ],
+      "related": [
+        "bojeonjichul",
+        "naebugeoleojichul",
+        "sunsegye-ingyeogeum"
+      ],
+      "sources": [
+        "지방회계법",
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "bojogeum",
+      "term": "보조금",
+      "hanja": "補助金",
+      "termEn": "Subsidies",
+      "initial": "ㅂ",
+      "category": "cat2",
+      "subcategory": "sub2-3",
+      "summary": "국가 또는 상급 지자체가 특정 사업의 수행을 장려하거나 재정을 돕기 위해 하급 지자체나 민간에 교부하는 자금.",
+      "detail": "용도가 지정되어 교부되는 재원으로, 국고보조금과 시·도비보조금 등이 대표적입니다. 지자체의 특정 사업 수행을 자극하는 효과가 있으나, 재원의 자율적 운용을 제한하고 지방비 매칭 부담을 유발합니다.",
+      "examples": [
+        "영유아 보육료 보조금",
+        "전통시장 현대화 사업 보조금"
+      ],
+      "related": [
+        "gukgobojogeum",
+        "jibangbojogeum",
+        "maechingsaup"
+      ],
+      "sources": [
+        "보조금 관리에 관한 법률",
+        "지방자치단체 보조금 관리에 관한 법률"
+      ]
+    },
+    {
+      "id": "bojosayeop",
+      "term": "보조사업",
+      "hanja": "補助事業",
+      "termEn": "Subsidized Project",
+      "initial": "ㅂ",
+      "category": "cat2",
+      "subcategory": "sub2-3",
+      "summary": "정부나 상급 지방자치단체로부터 보조금을 지원받아 수행하는 일체의 공공 사업.",
+      "detail": "보조금 지원 조건(매칭 비율 등)을 충족해야 추진할 수 있는 사업으로, 재정 자립도가 낮은 지자체가 대규모 인프라나 복지 정책을 시행할 때 핵심적인 역할을 합니다.",
+      "examples": [
+        "생태하천 복원 보조사업",
+        "노인 일자리 지원 사업"
+      ],
+      "related": [
+        "bojogeum",
+        "jache-sayeop",
+        "maechingsaup"
+      ],
+      "sources": [
+        "보조금 관리에 관한 법률",
+        "지방재정법"
+      ]
+    },
+    {
+      "id": "bojojichul",
+      "term": "보조지출",
+      "hanja": "補助支出",
+      "termEn": "Subsidized Expenditure",
+      "initial": "ㅂ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "보조사업을 수행하기 위해 실제로 예산을 집행하는 지출 행위.",
+      "detail": "중앙정부나 상급 지자체의 보조금에 자체 부담분을 합하여 최종 목적(민간 이전, 시설비 등)에 맞춰 지출하는 예산 집행입니다.",
+      "examples": [
+        "국비 보조사업에 따른 시설비 지출"
+      ],
+      "related": [
+        "bojosayeop",
+        "jache-sayeop"
+      ],
+      "sources": [
+        "지방재정법"
+      ]
+    },
+    {
+      "id": "samugwanlibi",
+      "term": "사무관리비",
+      "hanja": "事務管理費",
+      "termEn": "Office Management Expenses",
+      "initial": "ㅅ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "관서의 일상적인 사무를 처리하는 데 필요한 소모성 경비.",
+      "detail": "인쇄비, 소모품 구입비, 피복비, 간행물 구독료, 홍보물 제작비 등 부서 본연의 행정 업무를 원활하게 수행하기 위해 소요되는 일상적인 경비입니다. 예산 심의 시 집행 내역의 적절성이 자주 도마에 오릅니다.",
+      "examples": [
+        "사무용품 구입",
+        "행정봉투 및 책자 인쇄비"
+      ],
+      "related": [
+        "gonggong-un-yeongbi",
+        "haengjeong-un-yeong-gyeongbi"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "sayeop-yesanseo",
+      "term": "사업예산서 (세부사업 설명서)",
+      "hanja": "事業豫算書",
+      "termEn": "Program Budget Document (Detailed Project Description)",
+      "initial": "ㅅ",
+      "category": "cat1",
+      "subcategory": "sub1-2",
+      "summary": "예산안의 세부 사업별 추진 목적, 예산 규모, 산출 근거 등을 상세히 기록한 설명서.",
+      "detail": "주민참여예산 심의나 의회 예산 심사 시 가장 중요하게 활용되는 실무 문서입니다. 각 사업의 타당성을 입증하기 위해 사업 목표, 대상, 세부 예산 산출 공식 등을 명시합니다.",
+      "examples": [
+        "2026년도 세부사업 설명서 제출",
+        "사업설명서 기재 사항 검토"
+      ],
+      "related": [
+        "sanchulgeungeo",
+        "yesanseo",
+        "seipsechulyesanan"
+      ],
+      "sources": [
+        "지방재정법",
+        "주민참여예산 교육자료"
+      ]
+    },
+    {
+      "id": "seonginjiyesanseo",
+      "term": "성인지예산서",
+      "hanja": "性認知豫算書",
+      "termEn": "Gender Budget Statement",
+      "initial": "ㅅ",
+      "category": "cat6",
+      "subcategory": "sub6-1",
+      "summary": "예산이 여성과 남성에게 미칠 영향을 미리 분석하여 작성하는 법정 예산 문서.",
+      "detail": "정부나 지방자치단체가 예산을 편성할 때 성차별을 개선하고 성평등을 증진할 수 있도록 성인지 예산 대상 사업을 선정하고, 성평등 기대효과, 수혜자 분석 등을 담아 예산안에 첨부하는 서류입니다.",
+      "examples": [
+        "2025 회계연도 성인지예산서 작성"
+      ],
+      "related": [
+        "seonginjiyesan",
+        "seong-byeol-yeong-hyang-pyeong-ga"
+      ],
+      "sources": [
+        "국가재정법 제26조",
+        "지방재정법 제36조의2"
+      ]
+    },
+    {
+      "id": "siseolbi",
+      "term": "시설비",
+      "hanja": "施設費",
+      "termEn": "Construction and Facility Costs",
+      "initial": "ㅅ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "토목, 건축 등 공공 시설물의 신축, 증축 및 대규모 개보수에 소요되는 경비.",
+      "detail": "도로 개설, 공원 조성, 청사 신축 등 물리적인 하드웨어 인프라를 구축하고 시설을 정비하는 데 필요한 직접적인 공사비와 설계비, 감리비 등을 포함하는 자본적 지출의 핵심 과목입니다.",
+      "examples": [
+        "도서관 건립 공사 시설비",
+        "도로 확포장 설계비"
+      ],
+      "related": [
+        "jasan-chwideogbi",
+        "mingan-itaksayeopbi"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "sigungubi",
+      "term": "시군구비 (구비)",
+      "hanja": "市郡區費",
+      "termEn": "Municipal / District Funds",
+      "initial": "ㅅ",
+      "category": "cat2",
+      "subcategory": "sub2-1",
+      "summary": "기초지방자치단체(시·군·구)가 자체적으로 조달하여 지출하는 재원.",
+      "detail": "주로 국비나 시·도비 보조사업을 수행할 때 기초지자체가 법정 또는 자체 분담률에 따라 매칭하여 지불하는 구비 등을 의미하며, 지자체의 가용 재원 상황을 보여주는 주요 척도입니다.",
+      "examples": [
+        "매칭 사업 중 구비 분담액",
+        "구비 단독 자체사업"
+      ],
+      "related": [
+        "sidobi",
+        "maechingsaup",
+        "jache-sayeop"
+      ],
+      "sources": [
+        "지방재정법"
+      ]
+    },
+    {
+      "id": "sidobi",
+      "term": "시도비 (시비)",
+      "hanja": "市道費",
+      "termEn": "Provincial / Metropolitan Funds",
+      "initial": "ㅅ",
+      "category": "cat2",
+      "subcategory": "sub2-1",
+      "summary": "광역지방자치단체(특별시·광역시·도)가 조달하여 분담하거나 지원하는 재원.",
+      "detail": "광역지자체의 세수 및 자체 재원으로 조성되어 관내 기초지자체 보조사업에 매칭용 자금으로 내려보내는 시비, 도비 등입니다.",
+      "examples": [
+        "시비 보조금 30% 매칭",
+        "도비 지원 사업"
+      ],
+      "related": [
+        "sigungubi",
+        "sidobibojogeum",
+        "maechingsaup"
+      ],
+      "sources": [
+        "지방재정법"
+      ]
+    },
+    {
+      "id": "sichaek-eommuchujinbi",
+      "term": "시책업무추진비",
+      "hanja": "施策業務推進費",
+      "termEn": "Policy Promotion Expenses",
+      "initial": "ㅅ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "지자체가 주요 시책 사업을 원활하게 추진하기 위해 사용하는 집행 관리 경비.",
+      "detail": "기관 전체의 시책 추진, 대외 홍보, 간담회 및 공공 행사 운영 등 특정 시책과 직접적인 관계가 있는 업무를 추진하는 데 소요되는 비용입니다. 일반 기관운영에 사용되는 기관운영업무추진비와 구별됩니다.",
+      "examples": [
+        "주민참여예산 총회 다과 및 간담회비",
+        "시책 홍보를 위한 관계자 오찬"
+      ],
+      "related": [
+        "eommuchujinbi",
+        "gonggong-un-yeongbi"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "iwolaek",
+      "term": "이월액 (이월금)",
+      "hanja": "移越額",
+      "termEn": "Carryover Amount",
+      "initial": "ㅇ",
+      "category": "cat1",
+      "subcategory": "sub1-3",
+      "summary": "당해 회계연도 내에 지출하지 못하고 다음 회계연도로 넘겨서 사용하기 위해 이월한 예산 금액.",
+      "detail": "명시이월, 사고이월, 계속비이월 등으로 인해 차년도 재원으로 이월된 구체적인 예산 잔액을 의미합니다. 회계연도가 바뀐 후 실제 예산서상에 '이월금 세입'으로 편성되며, 제도적 의미인 '이월'과 구별하여 구체적인 예산 금액을 가리킵니다.",
+      "examples": [
+        "2024년도 사고이월액 5억 원",
+        "전년도 이월금 집행"
+      ],
+      "related": [
+        "iwol",
+        "myeongsiiwolbi",
+        "sagongiulbi"
+      ],
+      "sources": [
+        "지방재정법",
+        "지방회계법"
+      ]
+    },
+    {
+      "id": "ijeonsuib",
+      "term": "이전수입",
+      "hanja": "移轉收入",
+      "termEn": "Transfer Revenue",
+      "initial": "ㅇ",
+      "category": "cat2",
+      "subcategory": "sub2-1",
+      "summary": "국가나 상급 지방자치단체 등 외부로부터 대가 없이 이전받는 수입.",
+      "detail": "지자체가 자체적으로 징수하는 지방세나 세외수입 등 자주재원과 달리, 중앙정부나 광역지자체로부터 받는 지방교부세, 조정교부금, 국고보조금, 시도비보조금 등을 합산한 외부 의존재원 수입입니다.",
+      "examples": [
+        "정부 국고보조금 이전수입",
+        "시도 조정교부금 유입"
+      ],
+      "related": [
+        "uijon-jaewon",
+        "jibang-gyobu-se",
+        "bojogeum"
+      ],
+      "sources": [
+        "지방회계법",
+        "지방재정법"
+      ]
+    },
+    {
+      "id": "jasan-chwideogbi",
+      "term": "자산취득비",
+      "hanja": "資產取得費",
+      "termEn": "Asset Acquisition Costs",
+      "initial": "ㅈ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "비품, 차량, 기계 등 내용연수가 1년 이상인 물품이나 자산을 새로 구매하는 데 필요한 경비.",
+      "detail": "소모품을 사는 사무관리비와 달리, 지자체가 장기적으로 사용 및 보관할 수 있는 사무용 가구, 업무용 PC, 관용 차량, 시설 관리 장비 등을 취득하기 위한 자본 형성적 예산 항목입니다.",
+      "examples": [
+        "주민센터 노후 복사기 교체 자산취득비",
+        "관용 차량 구입비"
+      ],
+      "related": [
+        "siseolbi",
+        "samugwanlibi"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "jache-sayeop",
+      "term": "자체사업",
+      "hanja": "自體事業",
+      "termEn": "Locally-funded Project",
+      "initial": "ㅈ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "국가나 상급 지자체의 보조금 없이 지방자치단체가 자체 재원(지방세, 세외수입 등) 100%로 추진하는 사업.",
+      "detail": "보조금 지원 조건에 얽매이지 않고 지자체의 독자적인 정책 의지에 따라 자율적으로 기획하고 예산을 투입할 수 있어, 지역적 특색을 반영하기에 적합한 사업입니다.",
+      "examples": [
+        "구립 도서관 자체 연장 운영 사업",
+        "골목길 야간 안심 순찰 자체사업"
+      ],
+      "related": [
+        "bojosayeop",
+        "jache-jaewon",
+        "ilban-jaewon-teukjeongjaewon"
+      ],
+      "sources": [
+        "지방재정법"
+      ]
+    },
+    {
+      "id": "juminchamyeoyesan",
+      "term": "주민참여예산",
+      "hanja": "住民參與豫算",
+      "termEn": "Participatory Budgeting",
+      "initial": "ㅈ",
+      "category": "cat6",
+      "subcategory": "sub6-3",
+      "summary": "지방자치단체의 예산 편성 과정에 주민이 직접 참여하여 결정하는 예산.",
+      "detail": "지방재정의 투명성과 민주성을 제고하기 위한 제도적 장치입니다. 주민들이 사업 아이디어를 제안하고, 심의와 모니터링을 거쳐 자치단체의 정식 예산안에 반영됩니다.",
+      "examples": [
+        "2026년 주민참여예산 제안사업 공모",
+        "주민참여예산 총회"
+      ],
+      "related": [
+        "juminchamyeoyesanjedo",
+        "juminchamyeoyesanhwoe"
+      ],
+      "sources": [
+        "지방재정법 제39조",
+        "행정안전부 주민참여예산 운영지침"
+      ]
+    },
+    {
+      "id": "haengsasilbijiwongeum",
+      "term": "행사실비지원금",
+      "hanja": "行事實費支援金",
+      "termEn": "Actual Expense Support for Events",
+      "initial": "ㅎ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "지자체가 주관하거나 참여하는 행사에 민간인이 참석할 때 발생하는 실비(교통비, 급식비 등)를 보상하는 경비.",
+      "detail": "각종 체육대회, 문화 축제, 세미나 등에 동원되거나 자발적으로 참여하는 주민이나 단체원에게 조례 등에 의거하여 교통비, 숙박비, 식비 등 실제 발생한 경비 수준으로 지급하는 정액형 보상금입니다.",
+      "examples": [
+        "체육대회 참가 주민 급식비 지원",
+        "주민참여예산 위원 워크숍 교통비"
+      ],
+      "related": [
+        "haengsa-un-yeongbi",
+        "gita-bosanggeum"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "haengsa-un-yeongbi",
+      "term": "행사운영비",
+      "hanja": "行事運營費",
+      "termEn": "Event Operating Expenses",
+      "initial": "ㅎ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "지자체가 직접 주최하는 축제, 기념식, 체육대회 등 각종 행사를 진행하는 데 필요한 예산.",
+      "detail": "행사항 임차료, 무대 설치비, 음향 및 조명 대여비, 홍보물 인쇄비, 초청 강사료 등 공공 목적의 행사를 처음부터 끝까지 기획·집행하는 데 소요되는 경상적 경비입니다.",
+      "examples": [
+        "구민의 날 기념식 무대 설치비",
+        "청소년 동아리 축제 음향 대여"
+      ],
+      "related": [
+        "haengsasilbijiwongeum",
+        "samugwanlibi"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "gyesokbiiwol",
+      "term": "계속비이월",
+      "hanja": "繼續費移越",
+      "termEn": "Multi-year Carryover",
+      "initial": "ㄱ",
+      "category": "cat1",
+      "subcategory": "sub1-3",
+      "summary": "계속비로서 승인된 총액 범위 내에서 연도 내에 지출하지 못한 연부액을 다음 연도로 이월하여 사용하는 제도.",
+      "detail": "사고이월이나 명시이월과 달리 재정당국의 별도 승인 절차 없이 당연히 다음 연도로 이월되어 사용할 수 있습니다. 대규모 다년도 공사의 사업비 이월 시 적용됩니다.",
+      "examples": [
+        "대교 건설 계속비이월 집행"
+      ],
+      "related": [
+        "gyesokbi",
+        "iwol",
+        "myeongsiiwolbi"
+      ],
+      "sources": [
+        "국가재정법 제48조",
+        "지방재정법 제50조"
+      ]
+    },
+    {
+      "id": "jumin-uigyeonseo",
+      "term": "주민의견서",
+      "hanja": "住民意見書",
+      "termEn": "Resident Opinion Statement",
+      "initial": "ㅈ",
+      "category": "cat6",
+      "subcategory": "sub6-3",
+      "summary": "주민참여예산제도나 주요 투자사업에 대해 주민들이 검토하고 제출하는 공식적인 서면 의견서.",
+      "detail": "지방자치단체가 예산안을 편성하거나 의회에 제출할 때, 공청회나 주민참여예산위원회 등을 통해 수렴된 주민들의 건의, 삭감 요구, 신규 예산 편성 방향 등에 대한 제안을 정리해 첨부하는 법적 문서 또는 검토 조서입니다.",
+      "examples": [
+        "2026년도 예산안에 대한 주민의견서 첨부"
+      ],
+      "related": [
+        "juminchamyeoyesanjedo",
+        "yesanan"
+      ],
+      "sources": [
+        "지방재정법",
+        "지방자치법"
+      ]
+    },
+    {
+      "id": "uijon-jaewon",
+      "term": "의존재원",
+      "hanja": "依存財源",
+      "termEn": "Dependent Financial Sources",
+      "initial": "ㅇ",
+      "category": "cat2",
+      "subcategory": "sub2-1",
+      "summary": "지방자치단체가 자체적으로 조달하지 못하고 중앙정부나 상급 지자체로부터 지원받는 재정 수입.",
+      "detail": "지방교부세, 국고보조금, 조정교부금 등이 포함되며, 지방자치단체의 총예산 규모를 확대해주는 역할을 하지만 지방재정의 자율성과 독립성을 약화시키는 요인이 되기도 합니다.",
+      "examples": [
+        "의존재원 비율 60% 돌파",
+        "국고보조금 증대에 따른 의존성 심화"
+      ],
+      "related": [
+        "jache-jaewon",
+        "ijeonsuib",
+        "jibang-gyobu-se"
+      ],
+      "sources": [
+        "지방재정법",
+        "열린재정 재정용어사전"
       ]
     }
   ]

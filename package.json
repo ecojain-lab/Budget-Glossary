@@ -1,6 +1,6 @@
 {
   "name": "dicmoney",
-  "version": "0.9.1",
+  "version": "1.0.1",
   "private": true,
   "description": "공공·정부 예산 중심의 모바일 친화 예산용어사전 (Vanilla HTML/CSS/JS, 빌드 도구 없음)",
   "scripts": {
