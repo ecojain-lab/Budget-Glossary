@@ -5,7 +5,7 @@
 
 [![MIT](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
 [![version](https://img.shields.io/badge/version-v1.0.1-blue.svg)]()
-[![terms](https://img.shields.io/badge/terms-288-blue.svg)](./data/terms.json)
+[![terms](https://img.shields.io/badge/terms-289-blue.svg)](./data/terms.json)
 [![no build](https://img.shields.io/badge/build-none-lightgrey.svg)]()
 
 ---
@@ -14,7 +14,8 @@
 
 | 항목 | 변경 |
 |------|------|
-| 용어 수 | 249 → **288** (새로운 예산 실무 용어 추가 및 중복 용어 정제 완료) |
+| 용어 수 | 249 → **289** (새로운 예산 실무 용어 추가, 중복 용어 정제 및 온실가스감축인지 예산제 신규 추가 완료) |
+| 기후예산제 위계 조정 | 기존 "기후예산" 용어명을 **"기후예산제 (기후인지예산제)"**로 변경하고, 국가 공식 제도명인 **"온실가스감축인지 예산제"**를 신규 추가하여 상호 연계 설정 |
 | PWA 자동 업데이트 알림 | 서비스 워커와 연동하여 새로운 업데이트 배포 시 화면 하단에 반투명 글래스모피즘 스타일의 **[지금 업데이트]** 토스트 알림창 노출 기능 추가 |
 | 서비스 워커 캐시 갱신 | `sw.js` 캐시 이름을 `dicmoney-v1.0.1`로 갱신하여 클라이언트 측 무효화 처리, `skipWaiting` 메시지 수신 및 `controllerchange`를 통한 화면 자동 갱신 반영 |
 | 버전 일괄 동기화 | `package.json`, `terms.json`, `index.html` 의 버전 메타데이터를 **v1.0.1**로 일괄 업데이트 |
@@ -94,8 +95,8 @@
 - **모바일 우선** — 360px ~ 480px 화면에 최적화, 태블릿·데스크톱도 대응
 - **다크 모드** — 시스템 설정 자동 감지, 수동 토글 가능, `localStorage`에 저장
 - **6대분류 20중분류** — `예산 절차 · 재정 수입과 지출 · 회계·기금·회계처리 · 재정 규모와 건전성 · 결산·성과·평가 · 정책·시민 참여 예산`
-- **288개 용어 전 항목** examples(예시) · related(관련 용어) · sources(출처) 포함
-- **288개 용어** — 국가재정법, 열린재정, 서울시재정포털, 기획재정부, NABO, KLRI 등 공공 출처 기반, 전 항목 examples/related/sources 포함
+- **289개 용어 전 항목** examples(예시) · related(관련 용어) · sources(출처) 포함
+- **289개 용어** — 국가재정법, 열린재정, 서울시재정포털, 기획재정부, NABO, KLRI 등 공공 출처 기반, 전 항목 examples/related/sources 포함
 - **한자 + 영문 동시 표기** — 카드 우상단과 모달 상단에 작게
 - **실시간 검색** — 한글·한자·영문·요약·상세·출처 전부 대상, 150ms 디바운스
 - **가나다 초성 인덱스** — ㄱ~ㅎ + EN, 모바일 폭에 따라 자동 줄바꿈. 칩 탭 시 선택된 중분류 자동 해제
@@ -115,7 +116,7 @@ dicmoney/
 ├── README.md               # 사용·배포·용어 추가 가이드
 ├── package.json            # 로컬 서버 실행 스크립트 (선택)
 ├── data/
-│   ├── terms.json          # 288개 용어 메인 데이터
+│   ├── terms.json          # 289개 용어 메인 데이터
 │   └── terms.js            # 인라인 백업 (window.DICT_DATA)
 └── assets/
     ├── css/

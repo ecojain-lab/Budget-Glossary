@@ -3,7 +3,7 @@
     "title": "예산용어사전",
     "subtitle": "공공·정부 예산 중심 모바일 사전",
     "version": "1.0.1",
-    "total": 288,
+    "total": 289,
     "categories": {
       "cat1": {
         "id": "cat1",
@@ -1089,19 +1089,20 @@
     },
     {
       "id": "gihueyesan",
-      "term": "기후예산",
-      "hanja": "氣候豫算",
-      "termEn": "Climate Budgeting",
+      "term": "기후예산제 (기후인지예산제)",
+      "hanja": "氣候豫算制 (氣候認知豫算制)",
+      "termEn": "Climate Budgeting System (Climate-Responsive Budgeting)",
       "initial": "ㄱ",
       "category": "cat6",
       "subcategory": "sub6-2",
-      "summary": "기후변화 대응(완화·적응)을 위한 재원을 예산 차원에서 식별·관리하는 제도.",
-      "detail": "정부가 탄소중립·기후변화 적응을 위해 투입하는 예산을 사전에 식별(carbon tagging)하고, 지출 효과를 분석해 환류하는 제도입니다. 기후변화 완화(온실가스 감축)·적응(기후재해 대비·생태계 보전)을 모두 포함하는 광의의 개념입니다. 환경부가 2023년 한국형 기후예산 가이드를 마련해 시범 적용 중이며, OECD Paris-Aligned Budgeting 권고를 따릅니다. 환경부는 매해 기후변화 대응 재원 편성 결과를 발표합니다.",
+      "summary": "지자체 등에서 기후변화 완화 및 적응을 유도하기 위해 예산 편성·집행 과정에 기후 영향을 고려하도록 하는 제도.",
+      "detail": "기후변화 완화와 적응에 미치는 영향을 예산 편성 과정에 반영하고 환류하는 제도입니다. 서울특별시 등 일부 지방자치단체에서 선제적으로 도입하여 추진하고 있으며, 국가 차원의 공식 명칭인 '온실가스감축인지 예산제도'의 지방자치단체형 모델 혹은 이를 아우르는 넓은 의미의 용어로 사용됩니다.",
       "examples": [
         "탄소중립 예산 12조원",
         "기후변화대응 재원"
       ],
       "related": [
+        "onsilgas-gamchug-inji-yesanje",
         "tansojung-gyeong-yesan",
         "nogsæg-yesan"
       ],
@@ -6737,6 +6738,31 @@
       "sources": [
         "지방재정법",
         "열린재정 재정용어사전"
+      ]
+    },
+    {
+      "id": "onsilgas-gamchug-inji-yesanje",
+      "term": "온실가스감축인지 예산제",
+      "hanja": "溫室가스減縮認知 豫算制",
+      "termEn": "Greenhouse Gas Emission Reduction Cognitive Budgeting System",
+      "initial": "ㅇ",
+      "category": "cat6",
+      "subcategory": "sub6-2",
+      "summary": "정부 예산이 온실가스 감축에 미치는 영향을 분석하여 예산 편성·집행에 반영하는 국가 재정 제도.",
+      "detail": "정부가 예산이 온실가스 감축에 미치는 영향을 평가하여 이를 예산서와 결산서 작성에 반영하는 제도입니다. 국가재정법 제16조의2 및 지방재정법 제26조의2에 근거하여 도입되었으며, 예산이 탄소 배출량 증감에 미치는 영향을 분석하는 온실가스 태깅(Tagging) 및 평가 보고서를 작성하여 국회에 제출하도록 규정하고 있습니다. 2023 회계연도부터 정부 및 지방자치단체 예산에 본격 도입되어 운영 중이며, 지방자치단체 차원의 기후예산제(기후인지예산제)와 연계 및 상호 보완되어 적용됩니다.",
+      "examples": [
+        "온실가스감축인지 예산서",
+        "온실가스감축인지 기금운용계획서"
+      ],
+      "related": [
+        "gihueyesan",
+        "tansojung-gyeong-yesan",
+        "nogsæg-yesan"
+      ],
+      "sources": [
+        "국가재정법 제16조의2",
+        "지방재정법 제26조의2",
+        "기획재정부"
       ]
     }
   ]
