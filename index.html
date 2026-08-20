@@ -163,14 +163,54 @@
   <script src="assets/js/filter.js" defer></script>
   <script src="assets/js/modal.js" defer></script>
   <script src="assets/js/app.js" defer></script>
+
+  <!-- 업데이트 알림 토스트 -->
+  <div id="updateToast" class="update-toast" hidden>
+    <span class="update-toast__text">새 업데이트가 준비되었습니다.</span>
+    <button id="updateAppBtn" class="update-toast__btn" type="button">지금 업데이트</button>
+  </div>
+
   <script>
     if ('serviceWorker' in navigator && location.protocol !== 'file:') {
       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('./sw.js').catch(function (err) {
+        navigator.serviceWorker.register('./sw.js').then(function (reg) {
+          reg.addEventListener('updatefound', function () {
+            var newWorker = reg.installing;
+            if (!newWorker) return;
+            newWorker.addEventListener('statechange', function () {
+              if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                showUpdateToast(newWorker);
+              }
+            });
+          });
+
+          if (reg.waiting) {
+            showUpdateToast(reg.waiting);
+          }
+        }).catch(function (err) {
           console.warn('SW registration failed:', err);
         });
       });
     }
+
+    function showUpdateToast(worker) {
+      var toast = document.getElementById('updateToast');
+      var btn = document.getElementById('updateAppBtn');
+      if (!toast || !btn) return;
+      toast.removeAttribute('hidden');
+      btn.onclick = function () {
+        worker.postMessage('skipWaiting');
+        toast.setAttribute('hidden', 'true');
+      };
+    }
+
+    var refreshing = false;
+    navigator.serviceWorker.addEventListener('controllerchange', function () {
+      if (!refreshing) {
+        window.location.reload();
+        refreshing = true;
+      }
+    });
   </script>
 </body>
 </html>
