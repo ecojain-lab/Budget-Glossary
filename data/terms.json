@@ -3,7 +3,7 @@
     "title": "예산용어사전",
     "subtitle": "공공·정부 예산 중심 모바일 사전",
     "version": "1.0.1",
-    "total": 289,
+    "total": 298,
     "categories": {
       "cat1": {
         "id": "cat1",
@@ -5898,7 +5898,7 @@
     },
     {
       "id": "sanchulgeungeo",
-      "term": "산출근거",
+      "term": "산출근거 (산출 기초)",
       "hanja": "算出根據",
       "termEn": "Basis of Calculation",
       "initial": "ㅅ",
@@ -6763,6 +6763,209 @@
         "국가재정법 제16조의2",
         "지방재정법 제26조의2",
         "기획재정부"
+      ]
+    },
+    {
+      "id": "gong-gong-gigan-deung-e-daehan-jabon-ijeon",
+      "term": "공공기관등에대한자본이전 (403목)",
+      "hanja": "公共機關등에對한資本移轉",
+      "termEn": "Capital Transfer to Public Agencies",
+      "initial": "ㄱ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "자원순환센터 등 공공기관에 자본 형성을 목적으로 재정을 지원하는 예산 과목",
+      "detail": "지방자치단체가 소관 공공기관이나 대행기관 등의 자본 형성을 돕기 위해 이전하는 비용입니다. 시설의 신축, 대규모 개보수, 설비 확충 등 자산가치를 증가시키는 사업에 한하여 편성 및 집행할 수 있는 자본 성격의 지출입니다.",
+      "examples": [
+        "자원순환센터 시설 개보수 자본이전",
+        "공공기관 인프라 확충 지원비"
+      ],
+      "related": [
+        "gong-gong-gigan-witak-daehaeng-saeob-bi",
+        "min-gan-ijeon"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "gong-gong-yogeum-mit-jese",
+      "term": "공공요금 및 제세 (201-02세목)",
+      "hanja": "公共料金 및 諸稅",
+      "termEn": "Public Utility Charges & Taxes",
+      "initial": "ㄱ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "시설의 전기, 수도, 통신 및 세금 등 운영 유지에 필수적인 공공 비용",
+      "detail": "지방자치단체가 소유하거나 관리하는 공공시설의 기본적 유지 관리를 위한 우편요금, 전신전화료, 전기·수도요금, 가스요금 등 공공요금과 차량 세금, 법정 수수료 등을 지급하기 위해 편성하는 사무비 과목입니다.",
+      "examples": [
+        "시설 전기·수도 요금 납부",
+        "업무용 차량 자동차세 납부"
+      ],
+      "related": [
+        "samugwanlibi",
+        "ilban-un-yeongbi"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "sahoe-bojang-jeog-suhyeguem",
+      "term": "사회보장적수혜금 (301-01세목)",
+      "hanja": "社會保障的受惠金",
+      "termEn": "Social Security Benefits",
+      "initial": "ㅅ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "음료 배달 서비스 등 취약계층이나 주민에게 직접적인 현물·현금을 지원하는 복지 예산",
+      "detail": "사회보장 정책이나 사회복지 사업 등에 따라 사회적 배려가 필요한 대상자(기초생활수급자, 중장년 1인가구, 장애인 등)에게 직접적으로 지급하는 현금, 현물 또는 서비스 이용권 형태의 수혜성 지원금입니다.",
+      "examples": [
+        "취약계층 건강음료 배달 지원",
+        "저소득 가구 난방비 지원"
+      ],
+      "related": [
+        "min-gan-ijeon",
+        "bojo-saeob"
+      ],
+      "sources": [
+        "사회보장기본법",
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "ilban-un-yeongbi",
+      "term": "일반운영비 (201목)",
+      "hanja": "一般運營費",
+      "termEn": "General Operating Expenses",
+      "initial": "ㅇ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "기관의 일상 업무와 시설 운영을 위해 필요한 기본적인 경상 경비의 총칭",
+      "detail": "관서나 기관의 기본적인 행정 유지를 위해 매 회계연도마다 필수적으로 지출해야 하는 소모성 경비입니다. 사무관리비(201-01세목), 공공요금 및 제세(201-02세목), 행사운영비(201-03세목) 등으로 나뉘어 편성됩니다.",
+      "examples": [
+        "부서 기본사무용품 구입",
+        "기관 행사 및 교육 소모품 구입"
+      ],
+      "related": [
+        "samugwanlibi",
+        "gong-gong-yogeum-mit-jese",
+        "haengsa-un-yeongbi"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "gong-gong-gigan-witak-daehaeng-saeob-bi",
+      "term": "공공기관위탁대행사업비",
+      "hanja": "公共機關委託代行事業費",
+      "termEn": "Public Agency Entrusted Business Expenses",
+      "initial": "ㄱ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "공공기관이나 지방공사·공단 등에 공익 사무를 위탁하여 대행하게 할 때 소요되는 비용",
+      "detail": "지방자치단체가 직접 수행하기보다 공공성을 가진 법인, 지방공기업(지방공사, 공단) 혹은 지역 소속 체육회 등에 시설물 운영이나 특정 사업을 위탁하여 집행을 대행시킬 때 지급하는 위탁 경비입니다.",
+      "examples": [
+        "종합스포츠타운 위탁 대행",
+        "광역자원순환센터 관리 위탁"
+      ],
+      "related": [
+        "min-gan-witak-geum",
+        "min-gan-daehaeng-saeob-bi"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "min-gan-daehaeng-saeob-bi",
+      "term": "민간대행사업비",
+      "hanja": "民間代行事業費",
+      "termEn": "Private Commissioned Project Expenses",
+      "initial": "ㅁ",
+      "category": "cat2",
+      "subcategory": "sub2-2",
+      "summary": "민간이 추진하는 공익적 사업에 소요되는 경비를 보조 또는 대행 지원하기 위한 예산",
+      "detail": "지방자치단체가 직접 시행하지 않고 민간 단체나 주민 조직이 추진하는 특정한 공익 성격의 시설 개선이나 유지관리 업무를 대행하도록 지출하는 보조금 형식의 재정 지원 비용입니다.",
+      "examples": [
+        "공동주택 노후 공용시설물 유지보수 보조금 지원",
+        "상가 조직 활성화 사업 민간대행"
+      ],
+      "related": [
+        "min-gan-witak-geum",
+        "gong-gong-gigan-witak-daehaeng-saeob-bi"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "haengsa-seong-saeob",
+      "term": "행사성 사업",
+      "hanja": "行事性 事業",
+      "termEn": "Event-based Projects",
+      "initial": "ㅎ",
+      "category": "cat1",
+      "subcategory": "sub1-4",
+      "summary": "축제, 기념식, 세미나, 체육대회 등 특정 행사를 개최하고 운영하는 목적으로 예산이 투입되는 사업",
+      "detail": "일시적이거나 주기적으로 일어나는 주민 행사, 기념식, 문화 예술 축제 등의 추진을 위해 기획된 세부사업입니다. 일상 경비와 달리 행사운영비(201-03세목)나 행사실비지원금(301-09세목) 등 행사 관련 목/세목 위주로 예산이 편성됩니다.",
+      "examples": [
+        "어르신 놀이지도 연계 축제",
+        "환경의 날 기념 은평환경교육주간 운영"
+      ],
+      "related": [
+        "haengsa-un-yeongbi",
+        "samugwanlibi"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "min-gan-jabon-saeob-bojo",
+      "term": "민간자본사업보조",
+      "hanja": "民間資本事業補助",
+      "termEn": "Private Capital Project Subsidies",
+      "initial": "ㅁ",
+      "category": "cat2",
+      "subcategory": "sub2-3",
+      "summary": "민간이 자본을 형성하거나 자산을 취득하는 사업을 지원하기 위해 지자체가 민간에 교부하는 보조금",
+      "detail": "지방자치단체가 민간의 자본 형성을 수반하는 특정 사업(예: 시설 구축, 기계나 장비 도입 등)을 장려하기 위하여 지원하는 예산 과목입니다. 지출된 재원은 민간 단체나 법인의 고정 자산을 증가시키는 데 기여하며, 일회성 운영비 보조와는 성격이 다릅니다.",
+      "examples": [
+        "민간 복지시설 증축 보조금",
+        "전통시장 시설보수 및 장비 도입 지원"
+      ],
+      "related": [
+        "min-gan-ijeon",
+        "bojo-saeob"
+      ],
+      "sources": [
+        "지방자치단체 예산편성 운영기준"
+      ]
+    },
+    {
+      "id": "ijeon-jaewon",
+      "term": "이전재원",
+      "hanja": "移轉財源",
+      "termEn": "Transfer Revenue",
+      "initial": "ㅇ",
+      "category": "cat2",
+      "subcategory": "sub2-1",
+      "summary": "지방자치단체가 자체적으로 징수하지 않고, 국가나 상급 지자체로부터 지원받아 확보하는 재원",
+      "detail": "지방자치단체의 세입 재원 중 국가나 광역지방자치단체로부터 이전되는 재원으로, 국고보조금, 시·도비보조금, 지방교부세, 조정교부금 등이 이에 해당합니다. 지방자치단체의 재정 자립도를 낮추는 요인이 되기도 하지만, 재정 격차를 완화하고 특정 공익 사업을 유도하는 중요한 도구입니다.",
+      "examples": [
+        "국비 및 시비 보조금 교부",
+        "지방교부세 배분"
+      ],
+      "related": [
+        "ui-jon-jaewon",
+        "guggo-bojogum",
+        "jibang-gyobu-se",
+        "jachejaewon"
+      ],
+      "sources": [
+        "지방자치법",
+        "지방재정법"
       ]
     }
   ]
