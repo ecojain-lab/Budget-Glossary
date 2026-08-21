@@ -4,11 +4,20 @@
 > 한자(漢字) · 영문(English) 표기 포함, 빌드 도구 없음, 데이터는 JSON 한 파일.
 
 [![MIT](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
-[![version](https://img.shields.io/badge/version-v1.0.1-blue.svg)]()
-[![terms](https://img.shields.io/badge/terms-289-blue.svg)](./data/terms.json)
+[![version](https://img.shields.io/badge/version-v1.0.2-blue.svg)]()
+[![terms](https://img.shields.io/badge/terms-298-blue.svg)](./data/terms.json)
 [![no build](https://img.shields.io/badge/build-none-lightgrey.svg)]()
 
 ---
+
+## 📌 v1.0.2 변경 요약
+
+| 항목 | 변경 |
+|------|------|
+| 용어 수 | 289 → **298** (민간자본사업보조, 이전재원, 공공기관등에대한자본이전, 공공요금 및 제세 등 9개 신규 용어 추가 및 용어 정제 완료) |
+| 용어명 보완 | 기존 **"산출근거"** 용어명을 실무 명세 요구 시 범용적으로 통용되는 **"산출근거 (산출 기초)"**로 변경 |
+| 버전 일괄 동기화 | `package.json`, `terms.json`, `terms.js`, `index.html` 의 버전 메타데이터를 **v1.0.2**로 일괄 업데이트 |
+| 서비스 워커 캐시 갱신 | `sw.js` 캐시 이름을 `dicmoney-v1.0.2`로 갱신하여 클라이언트 측 브라우저의 업데이트 캐시 강제 무효화 처리 적용 |
 
 ## 📌 v1.0.1 변경 요약
 
